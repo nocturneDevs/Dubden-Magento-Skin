@@ -126,15 +126,24 @@ video {
   vertical-align: baseline;
 }
 body {
-  background-color: #f2e8c4;
-  color: #91835a;
+  background-color: #507d2a;
+}
+body div.wrapper {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #524a33;
 }
 body div.wrapper div.page {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  overflow-x: hidden;
+  width: 100%;
   font-family: "Oxygen", sans-serif;
+  /* HEADER */
+
+  /* BODY */
+
 }
 body div.wrapper div.page:before,
 body div.wrapper div.page:after {
@@ -165,16 +174,11 @@ body div.wrapper div.page div.header-container {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 101%;
-  position: relative;
-  top: -20px;
-  left: -0.5%;
-  padding: 3rem 0.5rem 0 0.5rem;
+  width: 100%;
+  padding: 1rem 0.5rem 0 0.5rem;
   margin: 0;
   background-color: #507d2a;
-  color: #ffffdd;
-  border-radius: 20px;
-  box-shadow: 0 0 5px #000000;
+  color: #ffffee;
 }
 body div.wrapper div.page div.header-container:before,
 body div.wrapper div.page div.header-container:after {
@@ -196,14 +200,28 @@ body div.wrapper div.page div.header-container div.title-wrapper {
   margin: 0 2rem;
 }
 body div.wrapper div.page div.header-container div.title-wrapper h1 {
+  margin-bottom: 0.5rem;
+  color: #ffffee;
   font-family: "Allerta", "Helvetica", sans-serif;
   font-size: 5.5rem;
+  line-height: 5.5rem;
   text-align: center;
+  transition: color 0.25s linear;
+  -webkit-transition: color 0.25s ease-out;
+}
+body div.wrapper div.page div.header-container div.title-wrapper h1:hover {
+  color: #ee9933;
 }
 body div.wrapper div.page div.header-container div.title-wrapper h2 {
+  color: #ffffee;
   font-size: 1.6rem;
+  line-height: 1.6rem;
   text-align: center;
   letter-spacing: 3px;
+}
+body div.wrapper div.page div.header-container div.quick-access {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
 }
 body div.wrapper div.page div.header-container div.quick-access:before,
 body div.wrapper div.page div.header-container div.quick-access:after {
@@ -250,7 +268,60 @@ body div.wrapper div.page div.header-container div.quick-access ul.links li {
   list-style: none;
   float: left;
 }
-body div.wrapper div.page .nav-container {
+body div.wrapper div.page .body-wrapper {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1rem;
+  background-color: #f2f1e4;
+  /* MAIN CONTAINER */
+
+}
+body div.wrapper div.page .body-wrapper:before,
+body div.wrapper div.page .body-wrapper:after {
+  content: " ";
+  display: table;
+}
+body div.wrapper div.page .body-wrapper:after {
+  clear: both;
+}
+body div.wrapper div.page .body-wrapper:before,
+body div.wrapper div.page .body-wrapper:after {
+  content: " ";
+  display: table;
+}
+body div.wrapper div.page .body-wrapper:after {
+  clear: both;
+}
+body div.wrapper div.page .body-wrapper h1 {
+  margin: 0 0 0.5rem 0;
+  color: #507d2a;
+  font-family: "Droid Serif", sans-serif;
+  font-size: 2rem;
+  line-height: 100%;
+}
+body div.wrapper div.page .body-wrapper h2 {
+  margin: 0 0 0.5rem 0;
+  color: #507d2a;
+  font-family: "Droid Serif", sans-serif;
+  font-size: 1.6rem;
+  line-height: 100%;
+}
+body div.wrapper div.page .body-wrapper h3 {
+  margin: 0 0 1rem 0;
+  color: #524a33;
+  font-size: 1.4rem;
+  line-height: 100%;
+}
+body div.wrapper div.page .body-wrapper p {
+  margin-bottom: 1rem;
+}
+body div.wrapper div.page .body-wrapper .nav-container {
+  width: 20%;
+  float: left;
+  /* NAVIGATION */
+
   /* All Levels */
   /* Style consistent throughout all nav levels */
 
@@ -265,383 +336,322 @@ body div.wrapper div.page .nav-container {
   /* Show menu */
 
 }
-body div.wrapper div.page .nav-container:before,
-body div.wrapper div.page .nav-container:after {
+body div.wrapper div.page .body-wrapper .nav-container:before,
+body div.wrapper div.page .body-wrapper .nav-container:after {
   content: " ";
   display: table;
 }
-body div.wrapper div.page .nav-container:after {
+body div.wrapper div.page .body-wrapper .nav-container:after {
   clear: both;
 }
-body div.wrapper div.page .nav-container:before,
-body div.wrapper div.page .nav-container:after {
+body div.wrapper div.page .body-wrapper .nav-container:before,
+body div.wrapper div.page .body-wrapper .nav-container:after {
   content: " ";
   display: table;
 }
-body div.wrapper div.page .nav-container:after {
+body div.wrapper div.page .body-wrapper .nav-container:after {
   clear: both;
 }
-body div.wrapper div.page .nav-container #nav {
+body div.wrapper div.page .body-wrapper .nav-container #nav {
   margin: 0;
-  padding: 0 1rem;
+  padding: 0 0 2rem 0;
   font-size: 1rem;
-  color: #ffffff;
+  color: #91835a;
 }
-body div.wrapper div.page .nav-container #nav:before,
-body div.wrapper div.page .nav-container #nav:after {
+body div.wrapper div.page .body-wrapper .nav-container #nav:before,
+body div.wrapper div.page .body-wrapper .nav-container #nav:after {
   content: " ";
   display: table;
 }
-body div.wrapper div.page .nav-container #nav:after {
+body div.wrapper div.page .body-wrapper .nav-container #nav:after {
   clear: both;
 }
-body div.wrapper div.page .nav-container #nav:before,
-body div.wrapper div.page .nav-container #nav:after {
+body div.wrapper div.page .body-wrapper .nav-container #nav:before,
+body div.wrapper div.page .body-wrapper .nav-container #nav:after {
   content: " ";
   display: table;
 }
-body div.wrapper div.page .nav-container #nav:after {
+body div.wrapper div.page .body-wrapper .nav-container #nav:after {
   clear: both;
 }
-body div.wrapper div.page .nav-container #nav li {
+body div.wrapper div.page .body-wrapper .nav-container #nav li {
   list-style: none;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin: 0.5rem 0 0.5rem 0.5rem;
 }
-body div.wrapper div.page .nav-container #nav li ul:before,
-body div.wrapper div.page .nav-container #nav li ul:after {
+body div.wrapper div.page .body-wrapper .nav-container #nav li a {
+  padding: 0;
+}
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul:before,
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul:after {
   content: " ";
   display: table;
 }
-body div.wrapper div.page .nav-container #nav li ul:after {
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul:after {
   clear: both;
 }
-body div.wrapper div.page .nav-container #nav li ul:before,
-body div.wrapper div.page .nav-container #nav li ul:after {
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul:before,
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul:after {
   content: " ";
   display: table;
 }
-body div.wrapper div.page .nav-container #nav li ul:after {
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul:after {
   clear: both;
 }
-body div.wrapper div.page .nav-container #nav li ul li {
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul li {
   background: rgba(145, 131, 90, 0.5);
   list-style: none;
+  color: #ffffff;
 }
-body div.wrapper div.page .nav-container #nav li ul li.last {
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul li.last {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-body div.wrapper div.page .nav-container #nav li ul li ul:before,
-body div.wrapper div.page .nav-container #nav li ul li ul:after {
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul li ul:before,
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul li ul:after {
   content: " ";
   display: table;
 }
-body div.wrapper div.page .nav-container #nav li ul li ul:after {
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul li ul:after {
   clear: both;
 }
-body div.wrapper div.page .nav-container #nav li ul li ul:before,
-body div.wrapper div.page .nav-container #nav li ul li ul:after {
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul li ul:before,
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul li ul:after {
   content: " ";
   display: table;
 }
-body div.wrapper div.page .nav-container #nav li ul li ul:after {
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul li ul:after {
   clear: both;
 }
-body div.wrapper div.page .nav-container #nav li ul li ul li {
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul li ul li {
   list-style: none;
 }
-body div.wrapper div.page .nav-container #nav li ul li ul li.first {
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul li ul li.first {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-body div.wrapper div.page .nav-container #nav li ul li ul li ul:before,
-body div.wrapper div.page .nav-container #nav li ul li ul li ul:after {
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul li ul li ul:before,
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul li ul li ul:after {
   content: " ";
   display: table;
 }
-body div.wrapper div.page .nav-container #nav li ul li ul li ul:after {
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul li ul li ul:after {
   clear: both;
 }
-body div.wrapper div.page .nav-container #nav li ul li ul li ul:before,
-body div.wrapper div.page .nav-container #nav li ul li ul li ul:after {
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul li ul li ul:before,
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul li ul li ul:after {
   content: " ";
   display: table;
 }
-body div.wrapper div.page .nav-container #nav li ul li ul li ul:after {
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul li ul li ul:after {
   clear: both;
 }
-body div.wrapper div.page .nav-container #nav li ul li ul li ul li {
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul li ul li ul li {
   list-style: none;
 }
-body div.wrapper div.page .nav-container #nav li {
+body div.wrapper div.page .body-wrapper .nav-container #nav li {
   position: relative;
   text-align: left;
 }
-body div.wrapper div.page .nav-container #nav li.over {
+body div.wrapper div.page .body-wrapper .nav-container #nav li.over {
   z-index: 5;
 }
-body div.wrapper div.page .nav-container #nav a,
-body div.wrapper div.page .nav-container #nav a:hover {
+body div.wrapper div.page .body-wrapper .nav-container #nav a,
+body div.wrapper div.page .body-wrapper .nav-container #nav a:hover {
   display: block;
   line-height: 1.3em;
   text-decoration: none;
 }
-body div.wrapper div.page .nav-container #nav span {
+body div.wrapper div.page .body-wrapper .nav-container #nav span {
   display: block;
   cursor: pointer;
   white-space: nowrap;
 }
-body div.wrapper div.page .nav-container #nav li ul span {
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul span {
   white-space: normal;
 }
-body div.wrapper div.page .nav-container #nav ul li.parent li a {
+body div.wrapper div.page .body-wrapper .nav-container #nav ul li.parent li a {
   background-image: none;
 }
-body div.wrapper div.page .nav-container #nav li {
-  float: left;
+body div.wrapper div.page .body-wrapper .nav-container #nav li {
+  /*float:left;*/
 }
-body div.wrapper div.page .nav-container #nav a {
-  float: left;
+body div.wrapper div.page .body-wrapper .nav-container #nav a {
+  /*float:left;*/
   padding: 5px 12px 6px 8px;
 }
-body div.wrapper div.page .nav-container #nav ul li,
-body div.wrapper div.page .nav-container #nav ul li.active {
+body div.wrapper div.page .body-wrapper .nav-container #nav ul li,
+body div.wrapper div.page .body-wrapper .nav-container #nav ul li.active {
   float: none;
   margin: 0;
   padding-bottom: 1px;
 }
-body div.wrapper div.page .nav-container #nav ul li.last {
+body div.wrapper div.page .body-wrapper .nav-container #nav ul li.last {
   padding-bottom: 0;
 }
-body div.wrapper div.page .nav-container #nav ul a,
-body div.wrapper div.page .nav-container #nav ul a:hover {
+body div.wrapper div.page .body-wrapper .nav-container #nav ul a,
+body div.wrapper div.page .body-wrapper .nav-container #nav ul a:hover {
   float: none;
   padding: 0;
   background: none;
 }
-body div.wrapper div.page .nav-container #nav ul li a {
+body div.wrapper div.page .body-wrapper .nav-container #nav ul li a {
   font-weight: normal;
 }
-body div.wrapper div.page .nav-container #nav ul,
-body div.wrapper div.page .nav-container #nav div {
+body div.wrapper div.page .body-wrapper .nav-container #nav ul,
+body div.wrapper div.page .body-wrapper .nav-container #nav div {
   position: absolute;
   width: 15em;
   top: 2rem;
   left: -10000px;
 }
-body div.wrapper div.page .nav-container #nav div ul {
+body div.wrapper div.page .body-wrapper .nav-container #nav div ul {
   position: static;
   width: auto;
   border: none;
 }
-body div.wrapper div.page .nav-container #nav ul ul,
-body div.wrapper div.page .nav-container #nav ul div {
+body div.wrapper div.page .body-wrapper .nav-container #nav ul ul,
+body div.wrapper div.page .body-wrapper .nav-container #nav ul div {
   top: 5px;
 }
-body div.wrapper div.page .nav-container #nav ul span,
-body div.wrapper div.page .nav-container #nav ul li.last li span {
+body div.wrapper div.page .body-wrapper .nav-container #nav ul span,
+body div.wrapper div.page .body-wrapper .nav-container #nav ul li.last li span {
   padding: 3px 15px 4px 15px;
 }
-body div.wrapper div.page .nav-container #nav li ul.shown-sub,
-body div.wrapper div.page .nav-container #nav li div.shown-sub {
+body div.wrapper div.page .body-wrapper .nav-container #nav li ul.shown-sub,
+body div.wrapper div.page .body-wrapper .nav-container #nav li div.shown-sub {
   left: 0;
   z-index: 999;
 }
-body div.wrapper div.page .nav-container #nav li .shown-sub ul.shown-sub,
-body div.wrapper div.page .nav-container #nav li .shown-sub li div.shown-sub {
+body div.wrapper div.page .body-wrapper .nav-container #nav li .shown-sub ul.shown-sub,
+body div.wrapper div.page .body-wrapper .nav-container #nav li .shown-sub li div.shown-sub {
   left: 100px;
 }
-body div.wrapper div.page div.main-container {
+body div.wrapper div.page .body-wrapper div.main-container {
+  width: 80%;
+  float: left;
   margin-bottom: 2rem;
 }
-body div.wrapper div.page div.main-container div.main {
-  width: 85%;
-  max-width: 60rem;
+body div.wrapper div.page .body-wrapper div.main-container div.main {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  /* PRODUCTS */
+
 }
-body div.wrapper div.page div.main-container div.main:before,
-body div.wrapper div.page div.main-container div.main:after {
+body div.wrapper div.page .body-wrapper div.main-container div.main:before,
+body div.wrapper div.page .body-wrapper div.main-container div.main:after {
   content: " ";
   display: table;
 }
-body div.wrapper div.page div.main-container div.main:after {
+body div.wrapper div.page .body-wrapper div.main-container div.main:after {
   clear: both;
 }
-body div.wrapper div.page div.main-container div.main:before,
-body div.wrapper div.page div.main-container div.main:after {
+body div.wrapper div.page .body-wrapper div.main-container div.main:before,
+body div.wrapper div.page .body-wrapper div.main-container div.main:after {
   content: " ";
   display: table;
 }
-body div.wrapper div.page div.main-container div.main:after {
+body div.wrapper div.page .body-wrapper div.main-container div.main:after {
   clear: both;
 }
-body div.wrapper div.page div.main-container div.main h1 {
-  margin: 0.5rem 0;
-  color: #507d2a;
-  font-family: "Droid Serif", sans-serif;
-  font-size: 2rem;
-}
-body div.wrapper div.page div.main-container div.main h2 {
-  margin: 0.5rem 0;
-  color: #507d2a;
-  font-family: "Droid Serif", sans-serif;
-  font-size: 1.6rem;
-}
-body div.wrapper div.page div.main-container div.main h3 {
-  margin: 1rem 0;
-  color: #524a33;
-  font-size: 1.4rem;
-}
-body div.wrapper div.page div.main-container div.main p {
-  margin-bottom: 1rem;
-}
-body div.wrapper div.page div.main-container div.main div.col-main {
+body div.wrapper div.page .body-wrapper div.main-container div.main div.col-main {
   display: inline;
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
 }
-body div.wrapper div.page div.main-container div.main div.col-main div.col-left {
+body div.wrapper div.page .body-wrapper div.main-container div.main div.col-main div.col-left {
   display: inline;
   float: left;
   width: 31.25%;
   margin: 0 1.0416666666666665%;
 }
-body div.wrapper div.page div.main-container div.main div.col-main div.home-spot {
+body div.wrapper div.page .body-wrapper div.main-container div.main div.col-main div.home-spot {
   display: inline;
   float: left;
   width: 64.58333333333334%;
   margin: 0 1.0416666666666665%;
 }
-body div.wrapper div.page div.main-container div.main div.col-right {
+body div.wrapper div.page .body-wrapper div.main-container div.main div.col-right {
   display: inline;
   float: left;
   width: 22.916666666666664%;
   margin: 0 1.0416666666666665%;
 }
-body div.wrapper div.page div.main-container div.main div.breadcrumbs ul {
-  font-size: 0.9rem;
-}
-body div.wrapper div.page div.main-container div.main div.breadcrumbs ul:before,
-body div.wrapper div.page div.main-container div.main div.breadcrumbs ul:after {
-  content: " ";
-  display: table;
-}
-body div.wrapper div.page div.main-container div.main div.breadcrumbs ul:after {
-  clear: both;
-}
-body div.wrapper div.page div.main-container div.main div.breadcrumbs ul:before,
-body div.wrapper div.page div.main-container div.main div.breadcrumbs ul:after {
-  content: " ";
-  display: table;
-}
-body div.wrapper div.page div.main-container div.main div.breadcrumbs ul:after {
-  clear: both;
-}
-body div.wrapper div.page div.main-container div.main div.breadcrumbs ul li {
-  list-style: none;
-  float: left;
-  clear: none;
-}
-body div.wrapper div.page div.main-container div.main div#main-links {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-body div.wrapper div.page div.main-container div.main div#main-links:before,
-body div.wrapper div.page div.main-container div.main div#main-links:after {
-  content: " ";
-  display: table;
-}
-body div.wrapper div.page div.main-container div.main div#main-links:after {
-  clear: both;
-}
-body div.wrapper div.page div.main-container div.main div#main-links:before,
-body div.wrapper div.page div.main-container div.main div#main-links:after {
-  content: " ";
-  display: table;
-}
-body div.wrapper div.page div.main-container div.main div#main-links:after {
-  clear: both;
-}
-body div.wrapper div.page div.main-container div.main div#main-links div.main-link-wrapper {
+body div.wrapper div.page .body-wrapper div.main-container div.main div.breadcrumbs {
   display: inline;
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
 }
-body div.wrapper div.page div.main-container div.main div#main-links div.main-link-wrapper h1 {
-  font-family: "Droid Serif", sans-serif;
-  font-size: 2rem;
-  font-weight: 800;
-  text-align: center;
-  color: #507d2a;
-  margin: 1.2rem 0;
+body div.wrapper div.page .body-wrapper div.main-container div.main div.breadcrumbs ul {
+  font-size: 0.8rem;
 }
-body div.wrapper div.page div.main-container div.main div#main-links div.main-link-wrapper div.main-link-img-wrapper {
-  width: 100%;
-  height: 15rem;
-  margin: 0.75rem 0;
-  border-bottom: 2px solid #eeaa33;
+body div.wrapper div.page .body-wrapper div.main-container div.main div.breadcrumbs ul:before,
+body div.wrapper div.page .body-wrapper div.main-container div.main div.breadcrumbs ul:after {
+  content: " ";
+  display: table;
 }
-body div.wrapper div.page div.main-container div.main div#main-links div.main-link-wrapper div.main-link-img-wrapper img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  max-height: 100%;
+body div.wrapper div.page .body-wrapper div.main-container div.main div.breadcrumbs ul:after {
+  clear: both;
 }
-body div.wrapper div.page div.main-container div.main div#main-links div.main-link-wrapper p {
-  margin: 0.75rem 0;
-  font-size: 1rem;
-  color: #91835a;
-  text-align: center;
-  letter-spacing: 1px;
+body div.wrapper div.page .body-wrapper div.main-container div.main div.breadcrumbs ul:before,
+body div.wrapper div.page .body-wrapper div.main-container div.main div.breadcrumbs ul:after {
+  content: " ";
+  display: table;
 }
-body div.wrapper div.page div.main-container div.main div.product-grid-entry {
-  height: 24rem;
-  display: inline;
-  float: left;
-  width: 31.25%;
-  margin: 0 1.0416666666666665%;
+body div.wrapper div.page .body-wrapper div.main-container div.main div.breadcrumbs ul:after {
+  clear: both;
 }
-body div.wrapper div.page div.main-container div.main div.product-grid-entry div.product-image-wrapper a.product-image {
-  margin-left: auto;
-  margin-right: auto;
-}
-body div.wrapper div.page div.main-container div.main div.product-grid-entry div.product-image-wrapper a.product-image img {
-  padding: 0.2rem;
-  border: 1px solid #91835a;
-}
-body div.wrapper div.page div.main-container div.main div.product-grid-entry div.product-image-wrapper a.product-image:hover img {
-  border: 1px solid #524a33;
-}
-body div.wrapper div.page div.main-container div.main div.product-grid-entry h3.product-name {
-  line-height: 1.5rem;
-  margin: 0;
-}
-body div.wrapper div.page div.main-container div.main div.product-grid-entry ul.add-to-links li {
+body div.wrapper div.page .body-wrapper div.main-container div.main div.breadcrumbs ul li {
   list-style: none;
   float: left;
   clear: none;
-  margin-right: 0.5rem;
+}
+body div.wrapper div.page .body-wrapper div.main-container div.main div.product-grid-entry {
+  height: 22rem;
+  float: left;
+  width: 25%;
+}
+body div.wrapper div.page .body-wrapper div.main-container div.main div.product-grid-entry div.product-image-wrapper a.product-image {
+  margin-left: auto;
+  margin-right: auto;
+}
+body div.wrapper div.page .body-wrapper div.main-container div.main div.product-grid-entry div.product-image-wrapper a.product-image img {
+  padding: 0.2rem;
+  border: 1px solid #91835a;
+}
+body div.wrapper div.page .body-wrapper div.main-container div.main div.product-grid-entry div.product-image-wrapper a.product-image:hover img {
+  border: 1px solid #524a33;
+}
+body div.wrapper div.page .body-wrapper div.main-container div.main div.product-grid-entry h3.product-name {
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 0;
+}
+body div.wrapper div.page .body-wrapper div.main-container div.main div.product-grid-entry div.ratings {
+  font-size: 0.8rem;
+}
+body div.wrapper div.page .body-wrapper div.main-container div.main div.product-grid-entry div.price-box {
+  color: #507d2a;
+}
+body div.wrapper div.page .body-wrapper div.main-container div.main div.product-grid-entry div.actions {
+  font-size: 0.8rem;
+}
+body div.wrapper div.page .body-wrapper div.main-container div.main div.product-grid-entry ul.add-to-links li {
+  list-style: none;
+  line-height: 150%;
+  margin: 0;
 }
 body div.wrapper div.page div.footer-container {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 101%;
-  position: relative;
-  left: -0.5%;
-  padding: 0 0.5rem 1rem 0.5rem;
+  width: 100%
+				padding: 0 0.5rem 1rem 0.5rem;
   margin: 0;
   background-color: #507d2a;
-  color: #ffffdd;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  box-shadow: 0 0 5px #000000;
+  color: #ffffee;
 }
 body div.wrapper div.page div.footer-container:before,
 body div.wrapper div.page div.footer-container:after {
@@ -675,72 +685,109 @@ body div.wrapper div.page div.footer-container div.footer ul {
 }
 body div.wrapper div.page div.footer-container div.footer ul li {
   list-style: none;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 body div.wrapper div.page div.footer-container div.footer p,
 body div.wrapper div.page div.footer-container div.footer address {
   font-size: 0.8rem;
   clear: both;
   text-align: center;
+  line-height: 125%;
+  margin-bottom: 0;
 }
-body div.wrapper div.page ul.tags-list li {
+ul.tags-list li {
   float: left;
   list-style: none;
   vertical-align: bottom;
   margin-right: 0.6rem;
 }
-body div.wrapper div.page div.pager {
-  font-size: 0.9rem;
+div.toolbar {
+  clear: both;
 }
-body div.wrapper div.page div.pager p,
-body div.wrapper div.page div.pager div.limiter {
+div.toolbar:before,
+div.toolbar:after {
+  content: " ";
+  display: table;
+}
+div.toolbar:after {
+  clear: both;
+}
+div.toolbar:before,
+div.toolbar:after {
+  content: " ";
+  display: table;
+}
+div.toolbar:after {
+  clear: both;
+}
+div.pager {
+  display: inline;
+  float: left;
+  width: 22.916666666666664%;
+  margin: 0 1.0416666666666665%;
+  font-size: 0.8rem;
+}
+div.pager p.amount,
+div.pager div.limiter {
   line-height: 1rem;
   margin: 0;
 }
-body div.wrapper div.page div.pager img {
+div.pager img {
   display: none;
 }
-body div.wrapper div.page div.pager a {
+div.pager a {
   transition: none;
   -webkit-transition: none;
 }
-body div.wrapper div.page div.pager div.pages ol:before,
-body div.wrapper div.page div.pager div.pages ol:after {
+div.pager div.pages ol:before,
+div.pager div.pages ol:after {
   content: " ";
   display: table;
 }
-body div.wrapper div.page div.pager div.pages ol:after {
+div.pager div.pages ol:after {
   clear: both;
 }
-body div.wrapper div.page div.pager div.pages ol:before,
-body div.wrapper div.page div.pager div.pages ol:after {
+div.pager div.pages ol:before,
+div.pager div.pages ol:after {
   content: " ";
   display: table;
 }
-body div.wrapper div.page div.pager div.pages ol:after {
+div.pager div.pages ol:after {
   clear: both;
 }
-body div.wrapper div.page div.pager div.pages ol li {
+div.pager div.pages ol li {
   float: left;
   clear: none;
   list-style: none;
   margin-right: 0.5rem;
 }
-body div.wrapper div.page div.pager div.pages ol li.current {
+div.pager div.pages ol li.current {
   color: #ee8822;
 }
-body div.wrapper div.page div.sorter {
-  font-size: 0.9rem;
+div.sorter {
+  display: inline;
+  float: left;
+  width: 22.916666666666664%;
+  margin: 0 1.0416666666666665%;
+  margin-left: 51.041666666666664%;
+  font-size: 0.8rem;
 }
-body div.wrapper div.page div.sorter img {
+div.sorter img {
   display: none;
 }
-body div.wrapper div.page div.sorter a {
+div.sorter a {
   transition: none;
   -webkit-transition: none;
 }
-body div.wrapper div.page div.sorter p.view-mode strong {
+div.sorter p.view-mode {
+  margin: 0;
+  line-height: 0;
+}
+div.sorter p.view-mode strong {
   color: #ee8822;
+}
+div.sorter div.sort-by {
+  margin: 0;
 }
 @media screen and (min-width: 600px) {
   body div.wrapper div.page div.main-container div.main div#main-links div.main-link-wrapper {
