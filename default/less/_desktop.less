@@ -7,19 +7,81 @@ body {
 
 		div.page {
 
-			div.main-container {
-				div.main {
-					div#main-links {
-						div.main-link-wrapper {
-							.column(4);
-							div.main-link-img-wrapper {
-								max-width:24rem;
-								margin-left:auto;
-								margin-right:auto;
+			div.header-container {
+
+			}
+
+			div.body-wrapper {
+
+
+
+				div.col-left-wrapper {
+					width:20%;
+					float:left;
+
+					div.nav-container {
+
+						#nav {
+							padding-left:1rem;
+							li {
+								.column(12);
+								margin-bottom:0.5rem;
 							}
 						}
 					}
+
+					div.col-left-before {
+
+						display:block;
+						div {
+							width:90%;
+							float:left;
+							margin:0 0.5rem 0.5rem 0;
+
+							div {
+								width:auto;
+								float:none;
+							}
+						}
+						
+					}
 				}
+					
+
+				div.col-main {
+					width:60%;
+					float:left;
+				}
+
+				div.col-left-after {
+					display:none;
+				}
+
+				div.col-right {
+					width:20%;
+					float:right;
+
+					div {
+						width:90%;
+						float:right;
+						margin:0 0 0.5rem 0.5rem;
+
+						div {
+							width:auto;
+							float:none;
+						}
+					}
+				}
+
+
+			}
+
+			div.product-grid-entry {
+				.column(4);
+			}
+
+			div.footer-container {
+
 			}
 
 		}
