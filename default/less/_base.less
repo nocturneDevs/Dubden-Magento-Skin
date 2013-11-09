@@ -382,17 +382,26 @@ body {
 				.column(12);
 				border-bottom:1px solid @textColor3;
 				
-				padding-top:0.25rem;
-				padding-bottom:0.25rem;
+				padding-top:0.5rem;
+				padding-bottom:0.5rem;
 
-				margin-top:0.25rem;
-				margin-bottom:0.25rem;
+				margin-top:0rem;
+				margin-bottom:0rem;
 
-				a.product-image {
+				div.product-image-wrapper {
+					.column(2.5);
+					a.product-image {
+						width:100%;
+						img {
+							width:100%;
+							height:auto;
+						}
+					}
+				}
+						
 
-				}	
-
-				div.product-shop {
+				div.product-details {
+					.column(7);
 					font-size:0.8rem;
 					h2.product-name {
 						color:@textColor4;
@@ -400,11 +409,26 @@ body {
 						line-height:1rem;
 						margin:0;
 					}
+
+					div.price-box {
+						color:@sapGreen;
+						font-size:1rem;
+					}
+				}
+
+				div.actions {
+					font-size:0.8rem;
+					.column(2.5);
 				}
 
 				&.last {
 					border:none;
 				}
+
+				&:hover {
+					background:darken(@backgroundColor1, 10%);
+				}
+
 			}
 				
 
