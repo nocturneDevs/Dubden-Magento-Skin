@@ -510,7 +510,8 @@ body div.wrapper div.page div.body-wrapper div.col-left-wrapper div.col-left-bef
   margin-bottom: 1rem;
   padding: 0.5rem;
   border: 1px solid #91835a;
-  background-color: #d0c9b4;
+  background-color: #eae8d3;
+  line-height: 120%;
 }
 body div.wrapper div.page div.body-wrapper div.col-left-wrapper div.col-left-before div div {
   margin: auto;
@@ -581,7 +582,8 @@ body div.wrapper div.page div.body-wrapper div.col-right div {
   margin-bottom: 1rem;
   padding: 0.5rem;
   border: 1px solid #91835a;
-  background-color: #d0c9b4;
+  background-color: #eae8d3;
+  line-height: 120%;
 }
 body div.wrapper div.page div.body-wrapper div.col-right div div {
   margin: auto;
@@ -655,15 +657,22 @@ body div.wrapper div.page div.product-list-entry {
 body div.wrapper div.page div.product-list-entry div.product-image-wrapper {
   display: inline;
   float: left;
-  width: 18.75%;
+  width: 14.583333333333334%;
   margin: 0 1.0416666666666665%;
 }
 body div.wrapper div.page div.product-list-entry div.product-image-wrapper a.product-image {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 body div.wrapper div.page div.product-list-entry div.product-image-wrapper a.product-image img {
   width: 100%;
   height: auto;
+  padding: 0.2rem;
+  border: 1px solid #91835a;
+}
+body div.wrapper div.page div.product-list-entry div.product-image-wrapper a.product-image:hover img {
+  border: 1px solid #524a33;
 }
 body div.wrapper div.page div.product-list-entry div.product-details {
   display: inline;
@@ -674,7 +683,7 @@ body div.wrapper div.page div.product-list-entry div.product-details {
 }
 body div.wrapper div.page div.product-list-entry div.product-details h2.product-name {
   color: #524a33;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1rem;
   margin: 0;
 }
@@ -686,14 +695,34 @@ body div.wrapper div.page div.product-list-entry div.actions {
   font-size: 0.8rem;
   display: inline;
   float: left;
-  width: 18.75%;
+  width: 22.916666666666664%;
   margin: 0 1.0416666666666665%;
+  text-align: right;
+}
+body div.wrapper div.page div.product-list-entry div.actions button {
+  background-color: #5c9030;
+  color: #ffffee;
+  padding: 0.4rem;
+  font-size: 0.7rem;
+  border-radius: none;
+  border: none;
+  box-shadow: none;
+}
+body div.wrapper div.page div.product-list-entry div.actions button:hover {
+  background-color: #68a337;
+}
+body div.wrapper div.page div.product-list-entry div.actions button:active {
+  background-color: #507d2a;
+}
+body div.wrapper div.page div.product-list-entry div.actions ul li {
+  color: #91835a;
+  line-height: 120%;
 }
 body div.wrapper div.page div.product-list-entry.last {
   border: none;
 }
 body div.wrapper div.page div.product-list-entry:hover {
-  background: #e1dfc2;
+  background: #ffffff;
 }
 body div.wrapper div.page div.footer-container {
   display: block;

@@ -231,7 +231,9 @@ body {
 							margin-bottom:1rem;
 							padding:0.5rem;
 							border:1px solid @textColor3;
-							background-color:lighten(@textColor3,30%);
+							background-color:darken(@backgroundColor1,5%);
+
+							line-height:120%;
 
 							div {
 								margin:auto;
@@ -293,7 +295,8 @@ body {
 						margin-bottom:1rem;
 						padding:0.5rem;
 						border:1px solid @textColor3;
-						background-color:lighten(@textColor3,30%);
+						background-color:darken(@backgroundColor1,5%);
+						line-height:120%;
 
 						div {
 							margin:auto;
@@ -389,12 +392,23 @@ body {
 				margin-bottom:0rem;
 
 				div.product-image-wrapper {
-					.column(2.5);
+					.column(2);
 					a.product-image {
 						width:100%;
 						img {
 							width:100%;
 							height:auto;
+							padding:0.2rem;	
+							border:1px solid @textColor3;
+						}
+
+						margin-left:auto;
+						margin-right:auto;
+
+						&:hover {
+							img {
+								border:1px solid darken(@textColor3,20%);	
+							}
 						}
 					}
 				}
@@ -405,7 +419,7 @@ body {
 					font-size:0.8rem;
 					h2.product-name {
 						color:@textColor4;
-						font-size:1rem;
+						font-size:0.9rem;
 						line-height:1rem;
 						margin:0;
 					}
@@ -418,7 +432,34 @@ body {
 
 				div.actions {
 					font-size:0.8rem;
-					.column(2.5);
+					.column(3);
+					text-align:right;
+					button {
+						background-color:lighten(@sapGreen,5%);
+						color:@textColor2;
+
+						padding:0.4rem;
+						font-size:0.7rem;
+
+						border-radius:none;
+						border:none;
+						box-shadow:none;
+
+						&:hover {
+							background-color:lighten(@sapGreen,10%);
+						}
+
+						&:active {
+							background-color:@sapGreen;
+						}						
+					}
+
+					ul {
+						li {
+							color:@textColor3;
+							line-height:120%;
+						}
+					}
 				}
 
 				&.last {
@@ -426,7 +467,7 @@ body {
 				}
 
 				&:hover {
-					background:darken(@backgroundColor1, 10%);
+					background:lighten(@backgroundColor1, 10%);
 				}
 
 			}
