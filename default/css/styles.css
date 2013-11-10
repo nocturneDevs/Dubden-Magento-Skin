@@ -145,6 +145,8 @@ body div.wrapper div.page {
 
   /* BODY */
 
+  /* BLOCKS */
+
   /* PRODUCTS */
 
   /* FOOTER */
@@ -274,7 +276,7 @@ body div.wrapper div.page div.header-container div.quick-access ul.links li {
   float: left;
 }
 body div.wrapper div.page div.body-wrapper {
-  background-color: #f2f1e4;
+  background-color: #faf9ed;
   padding: 1rem;
   width: 100%;
   /* MAIN COLUMN */
@@ -370,6 +372,7 @@ body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #
   clear: both;
 }
 body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #nav li ul li {
+  margin: 0;
   background: rgba(145, 131, 90, 0.5);
   list-style: none;
   color: #ffffff;
@@ -473,7 +476,7 @@ body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #
 body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #nav div {
   position: absolute;
   width: 15em;
-  top: 2rem;
+  left: 2rem;
   left: -10000px;
 }
 body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #nav div ul {
@@ -502,34 +505,18 @@ body div.wrapper div.page div.body-wrapper div.col-left-wrapper div.col-left-bef
   display: none;
   font-size: 0.8rem;
 }
-body div.wrapper div.page div.body-wrapper div.col-left-wrapper div.col-left-before div {
-  display: inline;
-  float: left;
-  width: 31.25%;
-  margin: 0 1.0416666666666665%;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  border: 1px solid #91835a;
-  background-color: #eae8d3;
-  line-height: 120%;
-}
-body div.wrapper div.page div.body-wrapper div.col-left-wrapper div.col-left-before div div {
-  margin: auto;
-  border: none;
-  float: none;
-}
 body div.wrapper div.page div.body-wrapper div.col-main h1 {
   margin: 0 0 0.5rem 0;
-  color: #244718;
+  color: #246718;
   font-family: "Droid Serif", sans-serif;
   font-size: 2rem;
   line-height: 100%;
 }
 body div.wrapper div.page div.body-wrapper div.col-main h2 {
   margin: 0 0 0.5rem 0;
-  color: #244718;
+  color: #246718;
   font-family: "Droid Serif", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 100%;
 }
 body div.wrapper div.page div.body-wrapper div.col-main h3 {
@@ -539,7 +526,17 @@ body div.wrapper div.page div.body-wrapper div.col-main h3 {
   line-height: 100%;
 }
 body div.wrapper div.page div.body-wrapper div.col-main p {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+  line-height: 200%;
+}
+body div.wrapper div.page div.body-wrapper div.col-main ul {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+body div.wrapper div.page div.body-wrapper div.col-main ul li {
+  line-height: 150%;
+  margin: 1rem;
 }
 body div.wrapper div.page div.body-wrapper div.col-main div.breadcrumbs {
   display: inline;
@@ -549,6 +546,8 @@ body div.wrapper div.page div.body-wrapper div.col-main div.breadcrumbs {
 }
 body div.wrapper div.page div.body-wrapper div.col-main div.breadcrumbs ul {
   font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  text-indent: 0;
 }
 body div.wrapper div.page div.body-wrapper div.col-main div.breadcrumbs ul:before,
 body div.wrapper div.page div.body-wrapper div.col-main div.breadcrumbs ul:after {
@@ -570,43 +569,37 @@ body div.wrapper div.page div.body-wrapper div.col-main div.breadcrumbs ul li {
   list-style: none;
   float: left;
   clear: none;
+  margin: 0;
 }
 body div.wrapper div.page div.body-wrapper div.col-right {
   font-size: 0.8rem;
 }
-body div.wrapper div.page div.body-wrapper div.col-right div {
-  display: inline;
-  float: left;
-  width: 31.25%;
-  margin: 0 1.0416666666666665%;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  border: 1px solid #91835a;
-  background-color: #eae8d3;
-  line-height: 120%;
-}
-body div.wrapper div.page div.body-wrapper div.col-right div div {
-  margin: auto;
-  border: none;
-  float: none;
-}
 body div.wrapper div.page div.body-wrapper div.col-left-after {
   font-size: 0.8rem;
 }
-body div.wrapper div.page div.body-wrapper div.col-left-after div {
+body div.wrapper div.page div.block {
   display: inline;
   float: left;
   width: 31.25%;
   margin: 0 1.0416666666666665%;
   margin-bottom: 1rem;
   padding: 0.5rem;
-  border: 1px solid #91835a;
-  background-color: #d0c9b4;
+  border: 1px solid #e9e5b1;
+  background-color: #f7f5e1;
+  line-height: 120%;
 }
-body div.wrapper div.page div.body-wrapper div.col-left-after div div {
-  margin: auto;
-  border: none;
-  float: none;
+body div.wrapper div.page div.block div.block-title {
+  color: #246718;
+  font-size: 1rem;
+}
+body div.wrapper div.page div.block div.block-content p.block-subtitle {
+  font-size: 0.9rem;
+}
+body div.wrapper div.page div.block div.block-content a {
+  color: #91835a;
+}
+body div.wrapper div.page div.block div.block-content a:hover {
+  color: #ee8822;
 }
 body div.wrapper div.page div.product-grid-entry {
   height: 21rem;
@@ -700,6 +693,7 @@ body div.wrapper div.page div.product-list-entry div.actions {
   text-align: right;
 }
 body div.wrapper div.page div.product-list-entry div.actions button {
+  float: right;
   background-color: #5c9030;
   color: #ffffee;
   padding: 0.4rem;
@@ -714,7 +708,13 @@ body div.wrapper div.page div.product-list-entry div.actions button:hover {
 body div.wrapper div.page div.product-list-entry div.actions button:active {
   background-color: #507d2a;
 }
+body div.wrapper div.page div.product-list-entry div.actions ul {
+  font-size: 0.8rem;
+  text-indent: none;
+}
 body div.wrapper div.page div.product-list-entry div.actions ul li {
+  margin: 0;
+  padding: 0;
   color: #91835a;
   line-height: 120%;
 }
@@ -776,6 +776,9 @@ body div.wrapper div.page div.footer-container div.footer address {
   line-height: 125%;
   margin-bottom: 0;
 }
+body div.wrapper div.page div.footer-container div.footer p.bugs {
+  padding-top: 1rem;
+}
 /* SITE-WIDE ELEMENTS */
 ul,
 ol {
@@ -797,10 +800,13 @@ div:after {
 div:after {
   clear: both;
 }
-ul.tags-list li {
+div.block-tags ul.tags-list li {
   float: left;
-  vertical-align: bottom;
   margin-right: 0.6rem;
+}
+div.block-tags div.actions {
+  float: none;
+  clear: both;
 }
 div.toolbar {
   clear: both;
@@ -831,7 +837,7 @@ div.pager {
 div.pager p.amount,
 div.pager div.limiter {
   line-height: 1rem;
-  margin: 0;
+  margin: 0 !important;
 }
 div.pager img {
   display: none;
@@ -889,6 +895,21 @@ div.sorter p.view-mode strong {
 }
 div.sorter div.sort-by {
   margin: 0;
+}
+button {
+  background-color: #5c9030;
+  color: #ffffee;
+  padding: 0.4rem;
+  font-size: 0.7rem;
+  border-radius: none;
+  border: none;
+  box-shadow: none;
+}
+button:hover {
+  background-color: #68a337;
+}
+button:active {
+  background-color: #507d2a;
 }
 @media screen and (min-width: 800px) {
   body div.wrapper div.page div.body-wrapper div.col-left-wrapper {

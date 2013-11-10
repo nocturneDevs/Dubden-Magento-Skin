@@ -139,6 +139,7 @@ body {
 								ul {
 									.clearfix;
 									li {
+										margin:0;
 										background:fade(@textColor3,50%);		
 										list-style:none;
 										color:@textColor1;
@@ -201,7 +202,7 @@ body {
 
 						/* 2nd Level */
 						#nav ul,
-						#nav div { position:absolute; width:15em; top:2rem; left:-10000px; }
+						#nav div { position:absolute; width:15em; left:2rem; left:-10000px; }
 						#nav div ul { position:static; width:auto; border:none; }
 
 						/* 3rd+ Level */
@@ -226,21 +227,22 @@ body {
 					div.col-left-before {
 						display:none;
 						font-size:0.8rem;
-						div {				// Any blocks in right column
-							.column(4);
-							margin-bottom:1rem;
-							padding:0.5rem;
-							border:1px solid @textColor3;
-							background-color:darken(@backgroundColor1,5%);
+						// div {				// Any blocks in right column
+						// 	.column(4);
+						// 	margin-bottom:1rem;
+						// 	padding:0.5rem;
+						// 	border:1px solid @textColor3;
+						// 	background-color:darken(@backgroundColor1,5%);
 
-							line-height:120%;
+						// 	line-height:120%;
 
-							div {
-								margin:auto;
-								border:none;
-								float:none;
-							}
-						}
+						// 	div {
+						// 		margin:auto;
+						// 		border:none;
+						// 		float:none;
+						// 		background:none;
+						// 	}
+						// }
 					}
 				}
 					
@@ -259,7 +261,7 @@ body {
 						margin:0 0 0.5rem 0;
 						color:@darkGreen;
 						font-family:"Droid Serif", sans-serif;
-						font-size:1.6rem;
+						font-size:1.4rem;
 						line-height:100%;
 					}
 					h3 {
@@ -270,7 +272,17 @@ body {
 						line-height:100%;
 					}
 					p {
-						margin-bottom:1rem;
+						margin-bottom:2rem;
+						text-align:justify;
+						line-height:200%;
+					}
+					ul {
+						font-size:1rem;
+						margin-bottom:2rem;
+						li {
+							line-height:150%;
+							margin:1rem;
+						}
 					}
 
 					div.breadcrumbs {
@@ -278,10 +290,14 @@ body {
 						ul {
 							font-size:0.8rem;
 							.clearfix;
+
+							margin-bottom:0.5rem;
+							text-indent:0;
 							li {
 								list-style:none;
 								float:left;
 								clear:none;
+								margin:0;
 							}
 						}
 					}
@@ -290,43 +306,72 @@ body {
 				/* RIGHT COLUMN */
 				div.col-right {
 					font-size:0.8rem;
-					div {				// Any blocks in right column
-						.column(4);
-						margin-bottom:1rem;
-						padding:0.5rem;
-						border:1px solid @textColor3;
-						background-color:darken(@backgroundColor1,5%);
-						line-height:120%;
+					// div {				// Any blocks in right column
+					// 	.column(4);
+					// 	margin-bottom:1rem;
+					// 	padding:0.5rem;
+					// 	border:1px solid @textColor3;
+					// 	background-color:darken(@backgroundColor1,5%);
+					// 	line-height:120%;
 
-						div {
-							margin:auto;
-							border:none;
-							float:none;
-						}
-					}
+					// 	div {
+					// 		margin:auto;
+					// 		border:none;
+					// 		float:none;
+					// 		background:none;
+					// 	}
+					// }
 				}
 
 				/* LEFT COLUMN */
 				div.col-left-after {
 					font-size:0.8rem;
-					div {				// Any blocks in right column
-						.column(4);
-						margin-bottom:1rem;
-						padding:0.5rem;
-						border:1px solid @textColor3;
-						background-color:lighten(@textColor3,30%);
+					// div {				// Any blocks in left after column
+					// 	.column(4);
+					// 	margin-bottom:1rem;
+					// 	padding:0.5rem;
+					// 	border:1px solid @textColor3;
+					// 	background-color:lighten(@textColor3,30%);
 
-						div {
-							margin:auto;
-							border:none;
-							float:none;
-						}
-					}
+					// 	div {
+					// 		margin:auto;
+					// 		border:none;
+					// 		float:none;
+					// 		background:none;
+					// 	}
+					// }
 				}
 
 			}	// div.body-wrapper
 
+			/* BLOCKS */
+			div.block {
+				.column(4);
+				margin-bottom:1rem;
+				padding:0.5rem;
+				border:1px solid darken(@backgroundColor1,15%);
+				background-color:darken(@backgroundColor1,3%);
+				line-height:120%;	
 
+				div.block-title {
+					color:@darkGreen;
+					font-size:1rem;
+				}
+
+				div.block-content {
+					
+					p.block-subtitle {
+						font-size:0.9rem;
+					}
+
+					a {
+						color:@textColor3;	
+						&:hover {
+							color:@linkHover;
+						}
+					}
+				}
+			}
 						
 
 			/* PRODUCTS */
@@ -435,6 +480,7 @@ body {
 					.column(3);
 					text-align:right;
 					button {
+						float:right;
 						background-color:lighten(@sapGreen,5%);
 						color:@textColor2;
 
@@ -455,7 +501,11 @@ body {
 					}
 
 					ul {
+						font-size:0.8rem;
+						text-indent:none;
 						li {
+							margin:0;
+							padding:0;
 							color:@textColor3;
 							line-height:120%;
 						}
@@ -503,6 +553,10 @@ body {
 						line-height:125%;
 						margin-bottom:0;
 					}
+
+					p.bugs {
+						padding-top:1rem;
+					}
 				}
 			}
 		}	
@@ -520,13 +574,20 @@ div {
 	.clearfix;
 }
 
-ul.tags-list {
-	li {
-		float:left;
-		vertical-align:bottom;
-		margin-right:0.6rem;
+div.block-tags {
+	ul.tags-list {
+		li {
+			float:left;		
+			margin-right:0.6rem;
+		}
+	}
+
+	div.actions {
+		float:none;
+		clear:both;
 	}
 }
+	
 
 div.toolbar {
 	.clearfix;
@@ -539,7 +600,7 @@ div.pager {
 
 	p.amount, div.limiter {
 		line-height:1rem;
-		margin:0;
+		margin:0 !important;
 	}
 
 
@@ -594,4 +655,24 @@ div.sorter {
 	div.sort-by {
 		margin:0;
 	}
+}
+
+button {
+	background-color:lighten(@sapGreen,5%);
+	color:@textColor2;
+
+	padding:0.4rem;
+	font-size:0.7rem;
+
+	border-radius:none;
+	border:none;
+	box-shadow:none;
+
+	&:hover {
+		background-color:lighten(@sapGreen,10%);
+	}
+
+	&:active {
+		background-color:@sapGreen;
+	}						
 }
