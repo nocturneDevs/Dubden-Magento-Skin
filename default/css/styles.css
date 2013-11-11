@@ -147,8 +147,6 @@ body div.wrapper div.page {
 
   /* BLOCKS */
 
-  /* PRODUCTS */
-
   /* FOOTER */
 
 }
@@ -373,7 +371,8 @@ body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #
 }
 body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #nav li ul li {
   margin: 0;
-  background: rgba(145, 131, 90, 0.5);
+  margin-left: 5rem;
+  background: rgba(145, 131, 90, 0.8);
   list-style: none;
   color: #ffffff;
 }
@@ -505,6 +504,10 @@ body div.wrapper div.page div.body-wrapper div.col-left-wrapper div.col-left-bef
   display: none;
   font-size: 0.8rem;
 }
+body div.wrapper div.page div.body-wrapper div.col-main {
+  /* PRODUCTS */
+
+}
 body div.wrapper div.page div.body-wrapper div.col-main h1 {
   margin: 0 0 0.5rem 0;
   color: #246718;
@@ -571,6 +574,263 @@ body div.wrapper div.page div.body-wrapper div.col-main div.breadcrumbs ul li {
   clear: none;
   margin: 0;
 }
+body div.wrapper div.page div.body-wrapper div.col-main div.product-grid-entry {
+  height: 21rem;
+  float: left;
+  width: 50%;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-grid-entry div.product-image-wrapper a.product-image {
+  margin-left: auto;
+  margin-right: auto;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-grid-entry div.product-image-wrapper a.product-image img {
+  padding: 0.2rem;
+  border: 1px solid #91835a;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-grid-entry div.product-image-wrapper a.product-image:hover img {
+  border: 1px solid #524a33;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-grid-entry h3.product-name {
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 0;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-grid-entry div.ratings {
+  font-size: 0.8rem;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-grid-entry div.price-box {
+  color: #507d2a;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-grid-entry div.actions {
+  font-size: 0.8rem;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-grid-entry ul.add-to-links li {
+  list-style: none;
+  line-height: 150%;
+  margin: 0;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-list-entry {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  border-bottom: 1px solid #91835a;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-list-entry div.product-image-wrapper {
+  display: inline;
+  float: left;
+  width: 14.583333333333334%;
+  margin: 0 1.0416666666666665%;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-list-entry div.product-image-wrapper a.product-image {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-list-entry div.product-image-wrapper a.product-image img {
+  width: 100%;
+  height: auto;
+  padding: 0.2rem;
+  border: 1px solid #91835a;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-list-entry div.product-image-wrapper a.product-image:hover img {
+  border: 1px solid #524a33;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-list-entry div.product-details {
+  display: inline;
+  float: left;
+  width: 56.25%;
+  margin: 0 1.0416666666666665%;
+  font-size: 0.8rem;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-list-entry div.product-details h2.product-name {
+  color: #524a33;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  margin: 0;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-list-entry div.product-details div.price-box {
+  color: #507d2a;
+  font-size: 1rem;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-list-entry div.actions {
+  font-size: 0.8rem;
+  display: inline;
+  float: left;
+  width: 22.916666666666664%;
+  margin: 0 1.0416666666666665%;
+  text-align: right;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-list-entry div.actions button {
+  float: right;
+  background-color: #5c9030;
+  color: #ffffee;
+  padding: 0.4rem;
+  font-size: 0.7rem;
+  border-radius: none;
+  border: none;
+  box-shadow: none;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-list-entry div.actions button:hover {
+  background-color: #68a337;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-list-entry div.actions button:active {
+  background-color: #507d2a;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-list-entry div.actions ul {
+  font-size: 0.8rem;
+  text-indent: none;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-list-entry div.actions ul li {
+  margin: 0;
+  padding: 0;
+  color: #91835a;
+  line-height: 120%;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-list-entry.last {
+  border: none;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-list-entry:hover {
+  background: #ffffff;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view {
+  font-size: 0.8rem;
+  line-height: 120%;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential {
+  margin-bottom: 1rem;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-shop p {
+  margin-bottom: 0;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-shop div {
+  margin-bottom: 0;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-shop div.price-box {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 2rem;
+  color: #507d2a;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-shop div.add-to-box {
+  margin-top: 0.5rem;
+  text-align: right;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-shop div.add-to-box ul.add-to-links {
+  font-size: 0.8rem;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-shop div.add-to-box ul.add-to-links li {
+  color: #91835a;
+  margin: 0;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-img-box {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-img-box p.product-image {
+  display: inline;
+  float: left;
+  width: 64.58333333333334%;
+  margin: 0 1.0416666666666665%;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-img-box p.product-image img {
+  max-width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-img-box div.more-views {
+  display: inline;
+  float: left;
+  width: 31.25%;
+  margin: 0 1.0416666666666665%;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-collateral div.box-collateral {
+  margin-top: 1rem;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-collateral div.box-collateral table ul {
+  font-size: 0.8rem;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-collateral div.box-collateral table ul li {
+  margin: 0;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-collateral div.box-tags h3,
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-collateral div.box-tags ul {
+  font-size: 0.8rem;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-collateral div.box-tags h3 li,
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-collateral div.box-tags ul li {
+  margin: 0;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.cart {
+  font-size: 0.8rem;
+  line-height: 120%;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.cart div.page-title ul li {
+  margin-left: 0;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.cart form {
+  margin-bottom: 2rem;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.cart form p {
+  margin-bottom: 0;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.cart form ul li {
+  margin-left: 0;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.cart form table.cart-table {
+  width: 100%;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.cart form table.cart-table td,
+body div.wrapper div.page div.body-wrapper div.col-main div.cart form table.cart-table th {
+  padding-left: 0rem;
+  padding-right: 2rem;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.cart form table.cart-table td a,
+body div.wrapper div.page div.body-wrapper div.col-main div.cart form table.cart-table th a {
+  color: #ee8822;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.cart form table.cart-table h2.product-name {
+  color: #524a33;
+  font-size: 1rem;
+  text-align: center;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.cart form table.cart-table h2.product-name a {
+  color: inherit;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.cart form table.cart-table h2.product-name a:hover {
+  color: #ee8822;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.cart div.cart-collaterals div.col2-set .col-1 {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.cart div.cart-collaterals div.col2-set .col-2 {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.cart div.cart-collaterals div.totals a {
+  color: #ee8822;
+  font-size: 0.8rem;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.cart div.cart-collaterals div.totals table {
+  font-size: 1rem;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.cart div.cart-collaterals div.totals ul.checkout-types li {
+  margin-left: 0;
+  margin-right: 0;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.cart div.cart-collaterals div.totals ul.checkout-types li button {
+  font-size: 1rem;
+}
 body div.wrapper div.page div.body-wrapper div.col-right {
   font-size: 0.8rem;
 }
@@ -601,128 +861,11 @@ body div.wrapper div.page div.block div.block-content a {
 body div.wrapper div.page div.block div.block-content a:hover {
   color: #ee8822;
 }
-body div.wrapper div.page div.product-grid-entry {
-  height: 21rem;
-  float: left;
-  width: 50%;
-}
-body div.wrapper div.page div.product-grid-entry div.product-image-wrapper a.product-image {
-  margin-left: auto;
-  margin-right: auto;
-}
-body div.wrapper div.page div.product-grid-entry div.product-image-wrapper a.product-image img {
-  padding: 0.2rem;
-  border: 1px solid #91835a;
-}
-body div.wrapper div.page div.product-grid-entry div.product-image-wrapper a.product-image:hover img {
-  border: 1px solid #524a33;
-}
-body div.wrapper div.page div.product-grid-entry h3.product-name {
-  font-size: 1rem;
-  line-height: 1rem;
-  margin: 0;
-}
-body div.wrapper div.page div.product-grid-entry div.ratings {
-  font-size: 0.8rem;
-}
-body div.wrapper div.page div.product-grid-entry div.price-box {
-  color: #507d2a;
-}
-body div.wrapper div.page div.product-grid-entry div.actions {
-  font-size: 0.8rem;
-}
-body div.wrapper div.page div.product-grid-entry ul.add-to-links li {
-  list-style: none;
-  line-height: 150%;
-  margin: 0;
-}
-body div.wrapper div.page div.product-list-entry {
+body div.wrapper div.page div.block div.block-content ol#cart-sidebar li div.product-details a {
   display: inline;
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
-  border-bottom: 1px solid #91835a;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin-top: 0rem;
-  margin-bottom: 0rem;
-}
-body div.wrapper div.page div.product-list-entry div.product-image-wrapper {
-  display: inline;
-  float: left;
-  width: 14.583333333333334%;
-  margin: 0 1.0416666666666665%;
-}
-body div.wrapper div.page div.product-list-entry div.product-image-wrapper a.product-image {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-body div.wrapper div.page div.product-list-entry div.product-image-wrapper a.product-image img {
-  width: 100%;
-  height: auto;
-  padding: 0.2rem;
-  border: 1px solid #91835a;
-}
-body div.wrapper div.page div.product-list-entry div.product-image-wrapper a.product-image:hover img {
-  border: 1px solid #524a33;
-}
-body div.wrapper div.page div.product-list-entry div.product-details {
-  display: inline;
-  float: left;
-  width: 56.25%;
-  margin: 0 1.0416666666666665%;
-  font-size: 0.8rem;
-}
-body div.wrapper div.page div.product-list-entry div.product-details h2.product-name {
-  color: #524a33;
-  font-size: 0.9rem;
-  line-height: 1rem;
-  margin: 0;
-}
-body div.wrapper div.page div.product-list-entry div.product-details div.price-box {
-  color: #507d2a;
-  font-size: 1rem;
-}
-body div.wrapper div.page div.product-list-entry div.actions {
-  font-size: 0.8rem;
-  display: inline;
-  float: left;
-  width: 22.916666666666664%;
-  margin: 0 1.0416666666666665%;
-  text-align: right;
-}
-body div.wrapper div.page div.product-list-entry div.actions button {
-  float: right;
-  background-color: #5c9030;
-  color: #ffffee;
-  padding: 0.4rem;
-  font-size: 0.7rem;
-  border-radius: none;
-  border: none;
-  box-shadow: none;
-}
-body div.wrapper div.page div.product-list-entry div.actions button:hover {
-  background-color: #68a337;
-}
-body div.wrapper div.page div.product-list-entry div.actions button:active {
-  background-color: #507d2a;
-}
-body div.wrapper div.page div.product-list-entry div.actions ul {
-  font-size: 0.8rem;
-  text-indent: none;
-}
-body div.wrapper div.page div.product-list-entry div.actions ul li {
-  margin: 0;
-  padding: 0;
-  color: #91835a;
-  line-height: 120%;
-}
-body div.wrapper div.page div.product-list-entry.last {
-  border: none;
-}
-body div.wrapper div.page div.product-list-entry:hover {
-  background: #ffffff;
 }
 body div.wrapper div.page div.footer-container {
   display: block;
@@ -911,6 +1054,18 @@ button:hover {
 button:active {
   background-color: #507d2a;
 }
+input {
+  box-shadow: none;
+  border: 1px solid #d0c9b4;
+  min-height: 1.5rem;
+  padding: 0;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  font-size: 0.8rem;
+}
+input.qty {
+  text-align: center;
+}
 @media screen and (min-width: 800px) {
   body div.wrapper div.page div.body-wrapper div.col-left-wrapper {
     width: 20%;
@@ -941,6 +1096,21 @@ button:active {
   body div.wrapper div.page div.body-wrapper div.col-main {
     width: 60%;
     float: left;
+  }
+  body div.wrapper div.page div.body-wrapper div.col-main div.cart {
+    width: 130%;
+  }
+  body div.wrapper div.page div.body-wrapper div.col-main div.cart div.cart-collaterals div.col2-set .col-1 {
+    display: inline;
+    float: left;
+    width: 47.91666666666667%;
+    margin: 0 1.0416666666666665%;
+  }
+  body div.wrapper div.page div.body-wrapper div.col-main div.cart div.cart-collaterals div.col2-set .col-2 {
+    display: inline;
+    float: left;
+    width: 47.91666666666667%;
+    margin: 0 1.0416666666666665%;
   }
   body div.wrapper div.page div.body-wrapper div.col-left-after {
     display: none;
