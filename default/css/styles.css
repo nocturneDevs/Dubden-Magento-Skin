@@ -372,13 +372,13 @@ body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #
 body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #nav li ul li {
   margin: 0;
   margin-left: 5rem;
-  background: rgba(145, 131, 90, 0.8);
+  background-color: #f7f5e1;
+  border-bottom: 1px solid #e9e5b1;
+  border-right: 1px solid #e9e5b1;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  color: #91835a;
   list-style: none;
-  color: #ffffff;
-}
-body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #nav li ul li.last {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #nav li ul li ul:before,
 body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #nav li ul li ul:after {
@@ -398,10 +398,6 @@ body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #
 }
 body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #nav li ul li ul li {
   list-style: none;
-}
-body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #nav li ul li ul li.first {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #nav li ul li ul li ul:before,
 body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #nav li ul li ul li ul:after {
@@ -485,7 +481,7 @@ body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #
 }
 body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #nav ul ul,
 body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #nav ul div {
-  top: 5px;
+  top: -1px;
 }
 body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #nav ul span,
 body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #nav ul li.last li span {
@@ -498,7 +494,7 @@ body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #
 }
 body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #nav li .shown-sub ul.shown-sub,
 body div.wrapper div.page div.body-wrapper div.col-left-wrapper .nav-container #nav li .shown-sub li div.shown-sub {
-  left: 100px;
+  left: 8rem;
 }
 body div.wrapper div.page div.body-wrapper div.col-left-wrapper div.col-left-before {
   display: none;
@@ -657,6 +653,9 @@ body div.wrapper div.page div.body-wrapper div.col-main div.product-list-entry d
   color: #507d2a;
   font-size: 1rem;
 }
+body div.wrapper div.page div.body-wrapper div.col-main div.product-list-entry div.product-details div.ratings p.rating-links {
+  margin-bottom: 0;
+}
 body div.wrapper div.page div.body-wrapper div.col-main div.product-list-entry div.actions {
   font-size: 0.8rem;
   display: inline;
@@ -704,6 +703,12 @@ body div.wrapper div.page div.body-wrapper div.col-main div.product-view {
 body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential {
   margin-bottom: 1rem;
 }
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-shop {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+}
 body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-shop p {
   margin-bottom: 0;
 }
@@ -727,6 +732,10 @@ body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.pro
   color: #91835a;
   margin: 0;
 }
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-shop div.short-description {
+  font-size: 0.9rem;
+  text-align: justify;
+}
 body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-img-box {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -734,19 +743,41 @@ body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.pro
 body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-img-box p.product-image {
   display: inline;
   float: left;
-  width: 64.58333333333334%;
+  width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
 }
 body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-img-box p.product-image img {
-  max-width: 80%;
-  display: block;
+  max-width: 200px;
+  padding: 0.2rem;
+  border: 1px solid #91835a;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-img-box div.more-views h2 {
+  font-family: "Oxygen";
+  font-size: 1rem;
+  color: #524a33;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-img-box div.more-views ul {
+  margin: 0;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-img-box div.more-views ul li {
+  margin: 0.25rem;
+  float: left;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-img-box div.more-views ul li a {
   margin-left: auto;
   margin-right: auto;
 }
-body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-img-box div.more-views {
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-img-box div.more-views ul li a img {
+  padding: 0.2rem;
+  border: 1px solid #91835a;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-img-box div.more-views ul li a:hover img {
+  border: 1px solid #524a33;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-collateral {
   display: inline;
   float: left;
-  width: 31.25%;
+  width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
 }
 body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-collateral div.box-collateral {
@@ -757,6 +788,14 @@ body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.pro
 }
 body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-collateral div.box-collateral table ul li {
   margin: 0;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-collateral div.box-collateral table.data-table tbody tr th {
+  text-align: right;
+  color: #91835a;
+  padding-right: 1rem;
+}
+body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-collateral div.box-collateral table.data-table tbody tr td ul {
+  margin-bottom: 0;
 }
 body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-collateral div.box-tags h3,
 body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-collateral div.box-tags ul {
@@ -1096,6 +1135,27 @@ input.qty {
   body div.wrapper div.page div.body-wrapper div.col-main {
     width: 60%;
     float: left;
+  }
+  body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-shop {
+    display: inline;
+    float: left;
+    width: 47.91666666666667%;
+    margin: 0 1.0416666666666665%;
+  }
+  body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-img-box {
+    display: inline;
+    float: left;
+    width: 47.91666666666667%;
+    margin: 0 1.0416666666666665%;
+  }
+  body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-img-box p.product-image img {
+    float: right;
+  }
+  body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-img-box div.more-views {
+    text-align: right;
+  }
+  body div.wrapper div.page div.body-wrapper div.col-main div.product-view div.product-essential form div.product-img-box div.more-views ul li {
+    float: right;
   }
   body div.wrapper div.page div.body-wrapper div.col-main div.cart {
     width: 130%;
