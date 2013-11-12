@@ -245,8 +245,35 @@ body div.wrapper div.page div.header-container div.quick-access:after {
   clear: both;
 }
 body div.wrapper div.page div.header-container div.quick-access form#search_mini_form {
-  padding: 0 1rem;
+  padding: 0 1rem 0.25rem 1rem;
   float: right;
+}
+body div.wrapper div.page div.header-container div.quick-access form#search_mini_form button {
+  background-color: #68a337;
+  color: #ffffee;
+  padding: 0.4rem;
+  font-size: 0.7rem;
+  border-radius: none;
+  border: none;
+  box-shadow: none;
+}
+body div.wrapper div.page div.header-container div.quick-access form#search_mini_form button:hover {
+  background-color: #6dab39;
+}
+body div.wrapper div.page div.header-container div.quick-access form#search_mini_form button:active {
+  background-color: #507d2a;
+}
+body div.wrapper div.page div.header-container div.quick-access form#search_mini_form input {
+  box-shadow: none;
+  border: 1px solid #5c9030;
+  min-height: 1.5rem;
+  padding: 0;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  font-size: 0.7rem;
+}
+body div.wrapper div.page div.header-container div.quick-access form#search_mini_form input.qty {
+  text-align: center;
 }
 body div.wrapper div.page div.header-container div.quick-access ul.links {
   float: left;
@@ -906,6 +933,9 @@ body div.wrapper div.page div.block div.block-content ol#cart-sidebar li div.pro
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
 }
+body div.wrapper div.page div.block div.block-content ol#cart-sidebar li div.product-details .product-name {
+  font-size: 0.9rem;
+}
 body div.wrapper div.page div.footer-container {
   display: block;
   margin-left: auto;
@@ -981,6 +1011,10 @@ div:after {
 }
 div:after {
   clear: both;
+}
+ul.tags-list li {
+  float: left;
+  margin-right: 0.6rem;
 }
 div.block-tags ul.tags-list li {
   float: left;
@@ -1104,6 +1138,58 @@ input {
 }
 input.qty {
   text-align: center;
+}
+/* POP-UP WINDOW */
+body.page-popup {
+  background-color: #faf9ed;
+  font-family: "Oxygen";
+  font-size: 1rem;
+}
+body.page-popup a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.25s linear;
+  -webkit-transition: color 0.25s ease-out;
+}
+body.page-popup a:hover {
+  color: #ee8822;
+}
+body.page-popup div div.product-image-popup {
+  max-width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body.page-popup div div.product-image-popup div.buttons-set {
+  margin: 0.5rem 0;
+}
+body.page-popup div div.product-image-popup div.buttons-set a {
+  color: #91835a;
+  font-size: 0.8rem;
+}
+body.page-popup div div.product-image-popup div.buttons-set a:hover {
+  color: #ee8822;
+}
+body.page-popup div div.product-image-popup img {
+  padding: 0.2rem;
+  border: 1px solid #91835a;
+}
+body.page-popup div div.product-image-popup div.nav {
+  margin: 0.5rem 0;
+}
+body.page-popup div div.product-image-popup div.nav a {
+  padding: 0.1rem 0.25rem;
+  background-color: #5c9030;
+  color: #ffffff;
+}
+body.page-popup div div.product-image-popup div.nav a.next {
+  float: right;
+}
+body.page-popup div div.product-image-popup div.nav a.prev {
+  float: left;
+}
+body.page-popup div div.product-image-popup div.nav a:hover {
+  background-color: #68a337;
 }
 @media screen and (min-width: 800px) {
   body div.wrapper div.page div.body-wrapper div.col-left-wrapper {
