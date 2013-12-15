@@ -70,13 +70,14 @@ body {
 
 		// BODY
 		.body-wrapper {
+			border-radius: 5px;
 			.make-xs-column(12);
+			background-color: @beige;
 			// SIDEBAR
 			.col-left-wrapper {
 				.make-md-column(2);
 				//NAVIGATION
 				.nav-container {
-					background-color: @beige;
 					// .nav;
 					#nav {
 						.nav;
@@ -168,8 +169,9 @@ body {
 		}
 
 		// FOOTER
-		.footer-container {
+		.footer-container {			
 			.footer {
+				margin-top: 2rem;
 				.make-xs-column(12);
 				.panel;
 				.panel-success;
@@ -187,6 +189,10 @@ body {
 					.make-md-column(12);
 					.well;
 					.text-center;
+					color: @beige;
+					a {
+						color:inherit;
+					}
 				}
 				address {
 					.hidden;
