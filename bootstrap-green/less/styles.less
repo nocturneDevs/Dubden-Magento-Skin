@@ -3,26 +3,37 @@
 
 body {
 	.page{
-		.make-md-column(10);
-		.make-md-column-offset(1);
-
 		// HEADER
 		.header{
+			.clearfix;
+			border-radius: 0;
 			.title-wrapper{
-				.jumbotron;
+				.make-md-column(10);
+				.make-md-column-offset(1);
+				.panel;
+				//.jumbotron;
 				.text-center;
-				background-image: url(http://ethiopiaembassy.eu/wp-content/uploads/2012/07/fresh-fruits-and-vegetables1.jpg);
+				margin-top: 8rem;
+				h1 {
+					color: #fff;
+					font-size: 13rem;
+				}
+				background-color: fade(@beige, 0%);
+				//background-image: url(http://ethiopiaembassy.eu/wp-content/uploads/2012/07/fresh-fruits-and-vegetables1.jpg);
 				background-position: center center;
 				a{color: lighten(@sapGreen,15%);}
 				.welcome-msg{
-					.small;
+					// .small;
+					font-size: 6rem;
+					color: @gray-light;
 				}		
 			}
 			.quick-access{
 				.navbar;
 				.navbar-default;
 				background-color: @beige;
-				// .make-md-column(12);
+				border-radius: 0;
+				.navbar-fixed-top;
 				#search_mini_form{
 					.navbar-form;
 					.make-md-column(4);
@@ -40,6 +51,8 @@ body {
 						button {
 							.btn;
 							.btn-success;
+							background-color: @gray;
+							border-color: @gray-dark;
 							.navbar-btn;
 							.make-xs-column(4);
 						}
@@ -70,6 +83,8 @@ body {
 
 		// BODY
 		.body-wrapper {
+			.make-md-column(10);
+			.make-md-column-offset(1);
 			border-radius: 5px;
 			.make-xs-column(12);
 			background-color: @beige;
@@ -115,8 +130,8 @@ body {
 					.make-md-column(12);
 					#carousel-home {
 						margin: 1rem 0;
-						.make-md-column(10);
-						.make-md-column-offset(1);
+						// .make-md-column(10);
+						// .make-md-column-offset(1);
 					}
 				}
 				.breadcrumbs {
@@ -221,9 +236,12 @@ body {
 		}
 
 		// FOOTER
-		.footer-container {			
+		.footer-container {
+			.clearfix;
 			.footer {
-				margin-top: 2rem;
+				.make-md-column(10);
+				.make-md-column-offset(1);
+				margin-top: 5rem;
 				.make-xs-column(12);
 				.panel;
 				.panel-success;
