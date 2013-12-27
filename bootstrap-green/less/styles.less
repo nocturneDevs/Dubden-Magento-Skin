@@ -166,6 +166,7 @@ body {
 
 			// MAIN CONTENT
 			.col-main {
+
 				.make-md-column(10);
 				background-color: @beige;
 				#homepage-carousel {
@@ -277,8 +278,40 @@ body {
 
 					}
 				}
+				.account-login {
+					.clearfix;
+					padding-bottom:5rem;
+					.col2-set {
+						.col-1 {
+							.make-md-column(5);
+							button {
+								.btn;
+								.btn-success;
+							}
+						}
+						.col-2 {
+							.make-md-column(5);
+							.make-md-column-offset(1);
+							ul {
+								list-style:none;
+								padding-left:0;
+							}
+
+							input {
+								.form-control;
+							} 
+
+							button {
+								.btn;
+								.btn-default;
+							}
+						}
+					}
+				}
 			}
 		}
+
+		
 
 		// FOOTER
 		.footer-container {
@@ -293,9 +326,7 @@ body {
 
 				color: @beige;
 				background-color: @sapGreen;
-				border-style: none;
-				border-radius: 0;
-				border-bottom: solid darken(@sapGreen, 2%) 0.5px;
+				border: solid darken(@sapGreen, 2%) 1px;
 
 				ul {
 					.nav;
