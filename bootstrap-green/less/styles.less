@@ -36,7 +36,7 @@ body {
 			.quick-access{
 				.navbar;
 				.navbar-default;
-				background-color: fade(@sapGreen,90%);
+				background-color: @sapGreen;
 				border-style: none;
 				border-radius: 0;
 				border-bottom: solid darken(@sapGreen, 2%) 0.5px;
@@ -290,12 +290,30 @@ body {
 				.make-xs-column(12);
 				.panel;
 				.panel-success;
+
+				color: @beige;
+				background-color: @sapGreen;
+				border-style: none;
+				border-radius: 0;
+				border-bottom: solid darken(@sapGreen, 2%) 0.5px;
+
 				ul {
 					.nav;
 					.nav-pills;
 					.nav-justified;
-					.small;
+					// .small;
 					.make-md-column(4);
+					li {
+						.h4;
+
+						a {
+							color: @beige;
+						}
+						a:hover {
+							color: #fff;
+							background-color:inherit;
+						}
+					}
 				}
 				ul.links {
 					.make-md-column(8);
@@ -304,7 +322,7 @@ body {
 					.make-md-column(12);
 					margin-top: 1rem;
 					.text-center;
-					color: @sapGreen;
+					
 					a {
 						color:inherit;
 					}
