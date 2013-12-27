@@ -2,6 +2,7 @@
 @import "customVariables.less";
 
 body {
+	padding-top: 40px;
 	.page{
 		// HEADER
 		.header{
@@ -10,33 +11,40 @@ body {
 			.title-wrapper{
 				.make-md-column(10);
 				.make-md-column-offset(1);
-				.panel;
 				//.jumbotron;
-				.text-center;
-				margin-top: 8rem;
+				//.text-center;
+				margin-top: 2rem;
+				margin-bottom: 1rem;
 				h1 {
+					.make-md-column(6);
 					color: #fff;
-					font-size: 13rem;
+					font-size: 8rem;
 				}
-				background-color: fade(@beige, 0%);
+				// background-color: fade(@beige, 0%);
 				//background-image: url(http://ethiopiaembassy.eu/wp-content/uploads/2012/07/fresh-fruits-and-vegetables1.jpg);
-				background-position: center center;
+				// background-position: center center;
 				a{color: lighten(@sapGreen,15%);}
 				.welcome-msg{
 					// .small;
-					font-size: 6rem;
+					margin-top: 6rem;
+					.make-md-column(6);
+					.text-center;
+					font-size: 3rem;
 					color: @gray-light;
 				}		
 			}
 			.quick-access{
 				.navbar;
 				.navbar-default;
-				background-color: @beige;
+				background-color: fade(@sapGreen,90%);
+				border-style: none;
 				border-radius: 0;
+				border-bottom: solid darken(@sapGreen, 2%) 0.5px;
 				.navbar-fixed-top;
 				#search_mini_form{
 					.navbar-form;
 					.make-md-column(4);
+					margin-top: 3px;
 					.form-search {
 						.form-group;
 						label {
@@ -65,10 +73,20 @@ body {
 					.navbar-vertical-align(@input-height-base);
 					.nav-justified;
 					.make-md-column(7);
+					li {
+						.h4;
+						a {
+							color: @beige;
+						}
+						a:hover {
+							color: #fff;
+						}
+					}
 				}
 				.form-language {
 					.make-md-column(1);
 					.navbar-form;
+					margin-top: 4px;
 					label {
 						.sr-only;
 					}
@@ -86,6 +104,8 @@ body {
 			.make-md-column(10);
 			.make-md-column-offset(1);
 			border-radius: 5px;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
 			.make-xs-column(12);
 			background-color: @beige;
 			// SIDEBAR
@@ -98,11 +118,33 @@ body {
 						.nav;
 						.nav-pills;
 						.nav-stacked;
+						.h4;
 						li {
+							background-color: @gray;
+							color: @beige;
+							border-radius: 5px;
 							.dropdown;
 							.level0 {
 								.dropdown-menu;
-							}	
+							}
+							a {
+								color: inherit;
+								background-color: @gray;
+							}
+							a:hover {
+								color: inherit;
+								background-color: lighten(@gray,10%);
+							}
+						}
+						li.active {
+							a {
+								background-color: @beige;
+								color: @gray;
+							}
+							a:hover {
+								background-color: @beige;
+								color: @gray;
+							}
 						}
 						
 					}
@@ -127,12 +169,15 @@ body {
 				.make-md-column(10);
 				background-color: @beige;
 				#homepage-carousel {
-					.make-md-column(12);
+					// .make-md-column(12);
 					#carousel-home {
 						margin: 1rem 0;
 						// .make-md-column(10);
 						// .make-md-column-offset(1);
 					}
+				}
+				.std {
+					.make-md-column(12);
 				}
 				.breadcrumbs {
 					background-color: @beige;
@@ -257,9 +302,9 @@ body {
 				}
 				p {
 					.make-md-column(12);
-					.well;
+					margin-top: 1rem;
 					.text-center;
-					color: @beige;
+					color: @sapGreen;
 					a {
 						color:inherit;
 					}
