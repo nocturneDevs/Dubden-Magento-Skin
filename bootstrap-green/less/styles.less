@@ -187,8 +187,8 @@ body {
 						background-color: @beige;
 					}
 				}
-				.page-title {
-
+				span.label {
+					color:@text-color;
 				}
 				.category-products {
 					.toolbar {
@@ -303,6 +303,88 @@ body {
 						}
 					}
 				}
+
+				.cart, .my-wishlist {
+					ul.checkout-types {
+						list-style:none;
+						padding-left:0;
+
+						li {
+							button {
+								.btn-success;
+							}
+						}
+					}
+
+					form {
+						table {
+							td {
+								padding:0 0.2rem;
+							}
+
+							tbody {
+								tr {
+									.panel;
+									.panel-default;
+									margin-bottom:1rem;
+
+									.cart-name {
+										width:50%;
+										dl {
+											dt {
+												width:4rem;
+											}
+										}
+									}
+
+									.cart-edit {
+										width:5%;
+									}
+
+									.cart-move {
+										width:8%;
+									}
+
+									.cart-unit-price {
+										width:8%;
+									}
+
+									.cart-qty {
+										width:8%;
+									}
+
+									.cart-subtotal {
+										width:8%;
+									}
+
+									.cart-remove {
+										width:8%;
+									}
+
+									h2.product-name {
+										font-size:2rem;
+									}
+								}
+							}
+
+							tfoot {
+								tr {
+									td {
+										margin-top:1rem;		
+									}
+								}
+							}
+						}
+					}
+
+					.discount-coupon-form {
+						.make-md-column(6);
+					}
+
+					.shipping {
+						.make-md-column(6);
+					}
+				}
 			}
 		}
 
@@ -371,11 +453,10 @@ body {
 				.form-control;
 				max-width:30rem;
 			} 
-
-			button {
-				.btn;
-				.btn-default;
-			}
+		}
+		button {
+			.btn;
+			.btn-default;
 		}
 	}
 }
