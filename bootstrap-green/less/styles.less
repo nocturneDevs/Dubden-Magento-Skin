@@ -182,14 +182,32 @@ body {
 				}
 				.breadcrumbs {
 					background-color: @beige;
+					margin-bottom: 0;
+					.clearfix;
 					ul {
 						.breadcrumb;
 						background-color: @beige;
+						margin-bottom: 0;
 					}
 				}
 				span.label {
 					color:@text-color;
 				}
+
+				.category-title {
+					padding-top: 1.5rem;
+					padding-bottom: 1.5rem;
+					margin-bottom: 0.5rem;
+					margin-top: 0;
+					h1 {
+						margin-left: 1rem;
+						border-radius: 5px;
+						color: @beige;
+						background-color: @sapGreen;
+						display: inline-block;
+					}
+				}
+
 				.category-products {
 					.toolbar {
 						.hidden;
