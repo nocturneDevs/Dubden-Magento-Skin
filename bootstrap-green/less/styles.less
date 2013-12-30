@@ -121,9 +121,8 @@ body {
 			.make-md-column(10);
 			.make-md-column-offset(1);
 			border-radius: 5px;
-			padding-top: 1rem;
-			padding-bottom: 1rem;
 			.make-xs-column(12);
+			padding:1rem 0;
 			background-color: @beige;
 			// SIDEBAR
 			.col-left-wrapper {
@@ -355,6 +354,20 @@ body {
 						}
 					}
 
+					.messages {
+						list-style:none;
+						padding:0;
+						li {
+							ul {
+								list-style:none;
+								padding:0;
+								li {
+									color:@brand-primary;
+								}
+							}
+						}
+					}
+
 					form {
 						table {
 							td {
@@ -416,12 +429,25 @@ body {
 						}
 					}
 
-					.discount-coupon-form {
+					#discount-coupon-form {
 						.make-md-column(6);
+						display:none;	// Hidden for now
 					}
 
 					.shipping {
 						.make-md-column(6);
+						display:none;	// Hidden for now
+					}
+
+					.totals {
+						margin-top:2rem;
+					}
+				}
+
+				ol.opc {
+					list-style:none;
+					span.number {
+						display:none;
 					}
 				}
 			}
