@@ -8102,9 +8102,20 @@ body .page .body-wrapper .col-main .cart form table tbody tr > .panel-footer + .
 body .page .body-wrapper .col-main .my-wishlist form table tbody tr > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #dddddd;
 }
+body .page .body-wrapper .col-main .cart form table tbody tr td,
+body .page .body-wrapper .col-main .my-wishlist form table tbody tr td {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+body .page .body-wrapper .col-main .cart form table tbody tr .cart-image,
+body .page .body-wrapper .col-main .my-wishlist form table tbody tr .cart-image {
+  padding-left: 0;
+  padding-right: 0;
+  width: 0;
+}
 body .page .body-wrapper .col-main .cart form table tbody tr .cart-name,
 body .page .body-wrapper .col-main .my-wishlist form table tbody tr .cart-name {
-  width: 50%;
+  width: 45%;
 }
 body .page .body-wrapper .col-main .cart form table tbody tr .cart-name dl dt,
 body .page .body-wrapper .col-main .my-wishlist form table tbody tr .cart-name dl dt {
@@ -8175,6 +8186,42 @@ body .page .body-wrapper .col-main .my-wishlist .shipping {
 body .page .body-wrapper .col-main .cart .totals,
 body .page .body-wrapper .col-main .my-wishlist .totals {
   margin-top: 2rem;
+}
+body .page .body-wrapper .col-main .my-wishlist .cart-cell .price-box,
+body .page .body-wrapper .col-main .my-wishlist .cart-cell .add-to-cart-alt {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+body .page .body-wrapper .col-main .my-wishlist .cart-cell .price-box:before,
+body .page .body-wrapper .col-main .my-wishlist .cart-cell .add-to-cart-alt:before,
+body .page .body-wrapper .col-main .my-wishlist .cart-cell .price-box:after,
+body .page .body-wrapper .col-main .my-wishlist .cart-cell .add-to-cart-alt:after {
+  content: " ";
+  display: table;
+}
+body .page .body-wrapper .col-main .my-wishlist .cart-cell .price-box:after,
+body .page .body-wrapper .col-main .my-wishlist .cart-cell .add-to-cart-alt:after {
+  clear: both;
+}
+body .page .body-wrapper .col-main .my-wishlist .cart-cell .price-box:before,
+body .page .body-wrapper .col-main .my-wishlist .cart-cell .add-to-cart-alt:before,
+body .page .body-wrapper .col-main .my-wishlist .cart-cell .price-box:after,
+body .page .body-wrapper .col-main .my-wishlist .cart-cell .add-to-cart-alt:after {
+  content: " ";
+  display: table;
+}
+body .page .body-wrapper .col-main .my-wishlist .cart-cell .price-box:after,
+body .page .body-wrapper .col-main .my-wishlist .cart-cell .add-to-cart-alt:after {
+  clear: both;
+}
+body .page .body-wrapper .col-main .my-wishlist .cart-cell .price-box input[type="text"],
+body .page .body-wrapper .col-main .my-wishlist .cart-cell .add-to-cart-alt input[type="text"] {
+  width: 25%;
+  float: left;
+}
+body .page .body-wrapper .col-main .my-wishlist .cart-cell .price-box button,
+body .page .body-wrapper .col-main .my-wishlist .cart-cell .add-to-cart-alt button {
+  float: left;
 }
 body .page .body-wrapper .col-main ol.opc {
   list-style: none;
@@ -8609,4 +8656,7 @@ fieldset[disabled] body .page button.active {
 body .page button .badge {
   color: #ffffff;
   background-color: #fff;
+}
+body .page input.input-text.qty {
+  text-align: right;
 }

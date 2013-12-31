@@ -380,8 +380,19 @@ body {
 									.panel-default;
 									margin-bottom:1rem;
 
+									td {
+										padding-left:0.5rem;
+										padding-right:0.5rem;
+									}
+
+									.cart-image {
+										padding-left:0;
+										padding-right:0;
+										width:0;
+									}
+
 									.cart-name {
-										width:50%;
+										width:45%;
 										dl {
 											dt {
 												width:4rem;
@@ -441,6 +452,24 @@ body {
 
 					.totals {
 						margin-top:2rem;
+					}
+				}
+
+				.my-wishlist {
+					.cart-cell {
+						.price-box, .add-to-cart-alt {
+							margin-top:0.5rem;
+							margin-bottom:0.5rem;
+							.clearfix;
+
+							input[type="text"] {
+								width:25%;
+								float:left;
+							}
+							button {
+								float:left;
+							}
+						}
 					}
 				}
 
@@ -522,6 +551,9 @@ body {
 		button {
 			.btn;
 			.btn-default;
+		}
+		input.input-text.qty {
+			text-align:right;
 		}
 	}
 }
