@@ -21,7 +21,7 @@ body {
 					font-size: 8rem;
 				}
 				// background-color: fade(@beige, 0%);
-				//background-image: url(http://ethiopiaembassy.eu/wp-content/uploads/2012/07/fresh-fruits-and-vegetables1.jpg);
+				// background-image: url(http://ethiopiaembassy.eu/wp-content/uploads/2012/07/fresh-fruits-and-vegetables1.jpg);
 				// background-position: center center;
 				a{color: lighten(@sapGreen,15%);}
 				.welcome-msg{
@@ -316,6 +316,46 @@ body {
 
 					}
 				}
+
+				.product-view {
+					.product-essential {
+						.product-shop {
+							.make-xs-column(6);
+							.clearfix;
+							.price-box {
+								.clearfix;
+								// .btn-link;
+								font-size: 2rem;
+								margin-right: 2rem;
+							}
+							.btn-cart {
+								.btn;
+								.btn-success;
+								.pull-left;
+								margin-right:1rem;
+							}
+							.add-to-links {
+								.pull-left;
+							}
+							.short-description {
+								clear:both;
+							}
+
+						}
+
+						.product-img-box {
+							.panel;
+							.make-xs-column(6);
+							img {
+								width:100%;
+							}
+						}
+					}
+
+					.product-collateral {
+						.hidden;
+					}
+				}
 				
 				.account-login {
 					.clearfix;
@@ -554,6 +594,19 @@ body {
 		}
 		input.input-text.qty {
 			text-align:right;
+		}
+		.add-to-links {
+			.clearfix;
+			li {
+				.btn;
+				.btn-default;
+				.pull-left;
+				margin-right:1rem;
+				a:hover {
+					text-decoration:none;
+					color:@brand-primary;
+				}
+			}
 		}
 	}
 }
