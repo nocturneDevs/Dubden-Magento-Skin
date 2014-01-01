@@ -289,9 +289,6 @@ body {
 
 						}
 						.price-box {
-							.btn;
-							// .btn-link;
-							font-size: 2rem;
 							.pull-left;
 							margin-right: 2rem;
 						}
@@ -324,7 +321,6 @@ body {
 							.clearfix;
 							.price-box {
 								.clearfix;
-								// .btn-link;
 								font-size: 2rem;
 								margin-right: 2rem;
 							}
@@ -572,6 +568,7 @@ body {
 			input {
 				.form-control;
 				max-width:30rem;
+				color:@text-color;
 			} 
 		}
 
@@ -582,11 +579,6 @@ body {
 
 		input.input-text.qty {
 			text-align:right;
-		}
-
-		input[type="radio"] {
-			margin:0.5rem;
-			width:auto;
 		}
 
 		.add-to-links {
@@ -604,20 +596,29 @@ body {
 		}
 		.messages {
 			.well;
-			// .well-lg;
 			list-style:none;
-			//padding:0;
+			
 			li {
 				ul {
 					list-style:none;
 					padding:0;
-					// li {
-					// 	color:@brand-primary;
-					// }
 				}
 			}
 		}
 
+		.validation-advice {
+			color:@gray;
+			font-size:@font-size-small;
+		}
 
+		.price-box {
+			font-size: 2rem;
+			.old-price {
+				font-size:1.6rem;
+			}
+			.special-price {
+				color:@gray;
+			}
+		}
 	}
 }
