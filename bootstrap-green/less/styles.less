@@ -204,16 +204,60 @@ body {
 										background-color: lighten(@gray,10%);
 									}
 								}
+								li.active {
+									a {
+										background-color: @sapGreen;
+										color: @beige;
+									}
+									a:hover {
+										background-color:lighten(@sapGreen, 10%);
+										color: @beige;
+									}
+								}
 							}
 						}
 						li.active {
 							a {
-								background-color: @beige;
-								color: @gray;
+								background-color: @sapGreen;
+								color: @beige;
 							}
 							a:hover {
-								background-color: @beige;
-								color: @gray;
+								background-color:lighten(@sapGreen, 10%);
+								color: @beige;
+							}
+
+							ul {
+								.nav;
+								.nav-pills;
+								.nav-stacked;
+								.h5;
+								li {
+									background-color: @gray;
+									color: @beige;
+									border-radius: 5px;
+									.dropdown;
+									.level0 {
+										// .dropdown-menu;
+									}
+									a {
+										color: inherit;
+										background-color: @gray;
+									}
+									a:hover {
+										color: inherit;
+										background-color: lighten(@gray,10%);
+									}
+								}
+								li.active {
+									a {
+										background-color: @sapGreen;
+										color: @beige;
+									}
+									a:hover {
+										background-color:lighten(@sapGreen, 10%);
+										color: @beige;
+									}
+								}
 							}
 						}
 						
