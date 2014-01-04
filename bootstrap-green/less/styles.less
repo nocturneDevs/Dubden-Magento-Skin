@@ -9,24 +9,30 @@ body {
 			.clearfix;
 			border-radius: 0;
 			.title-wrapper{
-				.make-sm-column(10);
-				.make-sm-column-offset(1);
-				//.jumbotron;
-				//.text-center;
-				margin-top: 2rem;
+				.clearfix;
+				margin-top: 50px;
 				margin-bottom: 1rem;
 				#logo-holder{
+					.hidden-xs;
 					.make-sm-column(2);
+					.make-sm-column-offset(1);
+					.make-md-column-offset(2);
 					.clearfix;
+					vertical-align: text-bottom;
+					margin-bottom: 2rem;
+					margin-top: 1rem;
 					img.main-logo {
 						height: auto;
 						width: 80%;
 					}
 				}
 				h1 {
-					.make-sm-column(6);
+					.make-sm-column(9);
+					.make-md-column(8);
+					// .text-center;
+					margin-top: 1rem;
 					color: #fff;
-					font-size: 8rem;
+					font-size: 7rem;
 				}
 				// background-color: fade(@beige, 0%);
 				// background-image: url(http://ethiopiaembassy.eu/wp-content/uploads/2012/07/fresh-fruits-and-vegetables1.jpg);
@@ -34,14 +40,16 @@ body {
 				a{color: lighten(@sapGreen,15%);}
 				.welcome-msg{
 					// .small;
-					margin-top: 5rem;
-					.make-sm-column(4);
-					.text-center;
+					margin-top: 0.5rem;
+					.make-sm-column(9);
+					.make-md-column(8);
+					// .text-center;
 					font-size: 3rem;
 					color: @gray-light;
 				}		
 			}
 			.quick-access{
+				.hidden-xs;
 				.navbar;
 				.navbar-default;
 				background-color: @sapGreen;
@@ -50,6 +58,7 @@ body {
 				border-bottom: solid darken(@sapGreen, 2%) 0.5px;
 				.navbar-fixed-top;
 				#search_mini_form{
+					.hidden-xs;
 					.navbar-form;
 					.make-sm-column(4);
 					margin-top: 3px;
@@ -119,6 +128,7 @@ body {
 				}
 				.form-language {
 					.make-sm-column(1);
+					.hidden-xs;
 					.navbar-form;
 					margin-top: 4px;
 					label {
@@ -135,8 +145,8 @@ body {
 
 		// BODY
 		.body-wrapper {
-			.make-sm-column(10);
-			.make-sm-column-offset(1);
+			.make-md-column(10);
+			.make-md-column-offset(1);
 			border-radius: 5px;
 			.make-xs-column(12);
 			padding:1rem 0;
@@ -319,7 +329,7 @@ body {
 				.category-title {
 					padding-top: 1.5rem;
 					padding-bottom: 1.5rem;
-					margin-bottom: 0.5rem;
+					margin-bottom: 2.5rem;
 					margin-top: 0;
 					h1 {
 						margin-left: 1rem;
@@ -380,44 +390,55 @@ body {
 						.hidden;
 					}
 					.product-list-entry {
-						.make-sm-column(12);
+						.clearfix;
 						.panel;
 						.panel-default;
 						.product-image-wrapper {
-							.pull-left;
-							margin-right: 5%;
+							.make-sm-column(2);
+							.hidden-xs;
 							a {
 								img {
-									.media-object;
+									width: 100%;
+									height: auto;
+									margin-top: 1rem;
+									margin-bottom:1rem; 
 								}
 							}
 						}
-						.product-name {
-
-						}
-						.price-box {
-							.pull-left;
-							margin-right: 2rem;
-						}
-						.ratings {
-							.hidden;
-						}
-						.actions {
-							button {
-								.btn;
-								.btn-success;
-								.pull-left;
+						.product-details{
+							.make-sm-column(10);
+							.product-name {
+								.make-sm-column(12);
 							}
-							.add-to-links {
-								.pull-left;
-								li {
+							.price-box {
+								.make-sm-column(3);
+							}
+							.ratings {
+								.hidden;
+							}
+							.actions {
+								.make-sm-column(9);
+								.make-xs-column(12);
+								.clearfix;
+								button {
 									.btn;
-									.btn-default;
+									.btn-success;
+									.make-xs-column(5);
 								}
+								.add-to-links {
+									.make-xs-column(7);
+									li {
+										.btn;
+										.btn-default;
+										.make-xs-column(10);
+									}
 
+								}
+							}
+							.product-brief {
+								.make-sm-column(12);
 							}
 						}
-
 					}
 				}
 
