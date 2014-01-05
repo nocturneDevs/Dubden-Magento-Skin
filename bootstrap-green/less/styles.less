@@ -309,9 +309,29 @@ body {
 						// .make-sm-column-offset(1);
 					}
 				}
+				
 				.std {
 					.make-sm-column(12);
+
+					.home-left-col,
+					.home-right-col {
+						font-size:1.8rem;
+						.make-xs-column(6);
+						text-align:justify;
+					}
+					.home-left-col {
+						margin-left:0;
+						padding-left:0;
+					}
+
+					.home-full {
+						font-size:1.8rem;
+						.make-xs-column(12);
+						margin-left:0;
+						padding-left:0;
+					}
 				}
+
 				.breadcrumbs {
 					background-color: @beige;
 					margin-bottom: 0;
@@ -322,6 +342,7 @@ body {
 						margin-bottom: 0;
 					}
 				}
+				
 				span.label {
 					color:@text-color;
 				}
@@ -385,6 +406,7 @@ body {
 
 					}
 				}
+				
 				.category-products {
 					.toolbar {
 						.hidden;
