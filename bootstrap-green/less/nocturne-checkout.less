@@ -1,0 +1,71 @@
+// Custom check out page
+body.checkout-onepage-index {
+	.opc {
+		.clearfix;
+		.make-xs-column(12);
+		.section{
+			.clearfix;
+			.panel;
+			.panel-primary;
+			.step-title {
+				.panel-heading;
+				.clearfix;
+				h2 {
+					.panel-title;
+					.pull-left;
+					padding: 0.5rem 0.5rem;
+				}
+				a {
+					.small;
+					.pull-right;
+					padding: 0.5rem 0.5rem;
+				}
+			}
+			.step {
+				.panel-body;
+			}
+
+			#checkout-step-login {
+				.col2-set {
+					.make-xs-column(12);
+					.col-1 {
+						.make-sm-column(6);
+						ul.form-list {
+							list-style:none;
+							// .list-group;
+							li.control {
+								.list-group-item;
+								.clearfix;
+								input {
+									.make-xs-column(1);
+								}
+								label {
+									.make-xs-column(11);
+								}
+							}
+						}
+					}
+					.col-2 {
+						.make-sm-column(6);
+					}
+				}
+			}
+		}
+
+		.section.allow{
+			.step-title {
+				a {
+					color: white;
+				}
+			}
+		}
+
+		.section.allow.active{
+			.step-title {
+				a {
+					color: @gray;
+				}
+			}
+		}
+	}
+}
