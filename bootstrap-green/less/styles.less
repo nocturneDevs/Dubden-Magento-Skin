@@ -621,6 +621,7 @@ body {
 				}
 
 				.cart, .my-wishlist {
+					
 					ul.checkout-types {
 						list-style:none;
 						padding-left:0;
@@ -632,77 +633,86 @@ body {
 						}
 					}
 
-					form {
-						table {
-							td {
-								padding:0 0.2rem;
-							}
+					#shopping-cart-table {
 
-							tbody {
-								tr {
-									.panel;
-									.panel-default;
-									margin-bottom:1rem;
+						// td {
+						// 	padding:0 0.2rem;
+						// }
 
-									td {
-										padding-left:0.5rem;
-										padding-right:0.5rem;
-									}
+						tbody {
+							tr {
+								// .panel;
+								// .panel-default;
+								border-bottom:1px solid @gray-light;
+								&.last {
+									border-bottom:none;
+								}
+								// margin-bottom:1rem;
 
-									.cart-image {
-										padding-left:0;
-										padding-right:0;
-										width:0;
-									}
+								td {
+									padding-left:0.5rem;
+									padding-right:0.5rem;
+								}
 
-									.cart-name {
-										width:45%;
-										dl {
-											dt {
-												width:4rem;
-											}
+								.cart-image {
+									padding-left:0;
+									padding-right:0;
+									width:0;
+								}
+
+								.cart-name {
+									width:45%;
+									dl {
+										dt {
+											width:4rem;
 										}
 									}
+								}
 
-									.cart-edit {
-										width:5%;
-									}
+								.cart-edit {
+									width:5%;
+								}
 
-									.cart-move {
-										width:8%;
-									}
+								.cart-move {
+									width:8%;
+								}
 
-									.cart-unit-price {
-										width:8%;
-									}
+								.cart-unit-price {
+									width:8%;
+								}
 
-									.cart-qty {
-										width:8%;
-									}
+								.cart-qty {
+									width:8%;
+								}
 
-									.cart-subtotal {
-										width:8%;
-									}
+								.cart-subtotal {
+									width:8%;
+								}
 
-									.cart-remove {
-										width:8%;
-									}
+								.cart-remove {
+									width:8%;
+								}
 
-									h2.product-name {
-										font-size:2rem;
-									}
+								h2.product-name {
+									font-size:1.6rem;
 								}
 							}
+							
+						}
 
-							tfoot {
-								tr {
-									td {
-										margin-top:1rem;
-									}
+						tfoot {
+							tr {
+								td {
+									margin-top:1rem;
 								}
 							}
 						}
 					}
+					
+					#shopping-cart-totals-table {
+						width:20rem;
+					}
+
 
 					#discount-coupon-form {
 						.make-sm-column(6);
