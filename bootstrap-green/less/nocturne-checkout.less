@@ -50,6 +50,56 @@ body.checkout-onepage-index {
 					}
 				}
 			}
+
+			#checkout-step-review {
+				.order-review {
+					.clearfix;
+					#checkout-review-table {
+						.clearfix;
+						// .table;
+						// .table-bordered;
+						.make-xs-column(12);
+						.make-md-column(8);
+						margin-bottom: 2rem;
+						thead{
+							border-bottom:  solid 1px @gray;
+						}
+						tfoot {
+							border-top: solid 1px @gray;
+							tr {
+								border-top: solid 1px @gray-light;
+							}
+							.first{
+								border-style: none;
+							}
+							tr.last {
+								.h4;
+							}
+						}
+						tbody {
+							tr {
+								border-top: solid 1px @gray-light;
+							}
+							.product-name {
+								.h5;
+								// .make-xs-column(6);
+							}
+							.a-right {
+								// .make-xs-column(2);
+							}
+							.a-center {
+								// .make-xs-column(2);
+							}
+						}
+					}
+					#checkout-review-submit {
+						.clearfix;
+						.make-xs-column(12);
+						.make-md-column(3);
+						.make-md-column-offset(1);
+					}
+				}
+			}
 		}
 
 		.section.allow{
