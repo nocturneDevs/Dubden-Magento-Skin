@@ -6,7 +6,7 @@ body.checkout-onepage-index {
 		.section{
 			.clearfix;
 			.panel;
-			.panel-primary;
+			.panel-default;
 			.step-title {
 				.panel-heading;
 				.clearfix;
@@ -19,6 +19,7 @@ body.checkout-onepage-index {
 					.small;
 					.pull-right;
 					padding: 0.5rem 0.5rem;
+					color: @sapGreen;
 				}
 			}
 			.step {
@@ -97,6 +98,10 @@ body.checkout-onepage-index {
 						.make-xs-column(12);
 						.make-md-column(3);
 						.make-md-column-offset(1);
+						.btn-checkout {
+							.btn;
+							.btn-primary;
+						}
 					}
 				}
 			}
@@ -113,7 +118,7 @@ body.checkout-onepage-index {
 		.section.allow.active{
 			.step-title {
 				a {
-					color: @gray;
+					color: @sapGreen;
 				}
 			}
 		}
