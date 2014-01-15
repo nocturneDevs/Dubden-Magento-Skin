@@ -598,6 +598,7 @@ body {
 							}
 						}
 						.short-description {
+							.clearfix;
 							h2{
 								.h4;
 							}
@@ -614,10 +615,35 @@ body {
 							.visible-md;
 							.visible-lg;
 						}
+						.box-description-inner {
+							.visible-md;
+							.visible-lg;
+							// .make-xs-column(12);
+							h2 {
+								.h4
+							}
+							.std {
+								padding:0;
+							}
+						}
 					}
 
 					.product-collateral {
-						.hidden;
+						.box-description-outer {
+							.make-xs-column(12);
+							.visible-xs;
+							.visible-sm;
+							h2 {
+								.h4;
+							}
+							.std {
+								padding:0;
+							}
+						}
+
+						.box-tags {
+							.hidden;
+						}
 					}
 				}
 
