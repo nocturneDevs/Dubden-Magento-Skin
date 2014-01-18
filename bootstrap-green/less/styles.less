@@ -831,6 +831,34 @@ body {
 						display:none;
 					}
 				}
+
+				#news {
+					div {
+						.well;
+						background:lighten(@gray-light,5%);
+						.make-sm-column(5.5);
+						padding:0;
+						margin-right:1rem;
+						h1, p, h2 {
+							margin:0;
+							padding:1rem;
+						}
+						h1, p {
+							border-bottom:solid 1px darken(@gray-light,10%);
+						}
+						h1 {
+							.h3;
+						}
+						p {
+							text-align:justify;
+							height:8rem;
+						}
+						h2 {
+							text-align:right;
+							.h6;
+						}
+					}	
+				}
 			}
 		}
 
