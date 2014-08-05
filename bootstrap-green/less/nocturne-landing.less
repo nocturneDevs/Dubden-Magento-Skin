@@ -1,0 +1,64 @@
+// Custom landing page with store chooser
+
+body.page-empty {
+  .page {
+    .title-wrapper{
+      .clearfix;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      #logo-holder{
+        .make-xs-column(12);
+        vertical-align: text-bottom;
+        margin-bottom: 1rem;
+        margin-top: 1.5rem;
+        text-align: center;
+        img.main-logo {
+          height: auto;
+          width: 120px;
+        }
+      }
+      #title-text {
+        .clearfix;
+        .make-xs-column(12);
+        h1 {
+          .text-center;
+          margin-top: 1rem;
+          color: #fff;
+          font-size: 6.5rem;
+        }
+        .welcome-msg{
+          // .small;
+          margin-top: 0.5rem;
+          .text-center;
+          font-size: 2.4rem;
+          color: @gray-light;
+        }
+      }
+    }
+    .page-title {
+      margin-top: 6rem;
+      text-align: center;
+      h1 {
+        .h3;
+        color: #fff;
+      }
+    }
+    #choose-store {
+      text-align: center;
+      a {
+        .make-xs-column(4);
+        .btn;
+        .btn-success;
+        float: none;
+        display: block;
+        margin: 2rem auto;
+        background-color: @gray;
+        border-color: @gray-dark;
+        &:hover {
+          background-color: @beige;
+          color: @gray;
+        }
+      }
+    }
+  }
+}
