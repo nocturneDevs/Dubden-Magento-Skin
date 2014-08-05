@@ -94,7 +94,8 @@ body {
 					.nav-pills;
 					.navbar-vertical-align(@input-height-base);
 					.nav-justified;
-					.make-sm-column(9);
+					.make-sm-column(8);
+					.make-lg-column(8.5);
 					li {
 						.h4;
 						a {
@@ -111,7 +112,8 @@ body {
 					.nav-pills;
 					.navbar-vertical-align(@input-height-base);
 					.nav-justified;
-					.make-sm-column(0.5);
+					.make-sm-column(1.5);
+					.make-lg-column(1);
 					li {
 						.h4;
 						.clearfix;
@@ -125,6 +127,10 @@ body {
 							margin: 0.6rem 0;
 							padding: 0;
 							color: @beige;
+							span {
+								font-size: 1rem;
+								// padding-top: 0.1rem;
+							}
 						}
 						a:hover {
 							color: #fff;
