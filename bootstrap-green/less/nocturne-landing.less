@@ -10,11 +10,11 @@ body.page-empty {
         .make-xs-column(12);
         vertical-align: text-bottom;
         margin-bottom: 1rem;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         text-align: center;
         img.main-logo {
           height: auto;
-          width: 120px;
+          width: 80px;
         }
       }
       #title-text {
@@ -59,6 +59,18 @@ body.page-empty {
           color: @gray;
         }
       }
+    }
+    .landing-info {
+      padding: 3rem inherit;
+      text-align: center;
+      color: @gray-light;
+      .make-sm-column(4);
+    }
+    #store-location-info {
+      .make-sm-column-offset(1);
+    }
+    #cash-on-delivery-info {
+      .make-sm-column-offset(2);
     }
   }
 }
