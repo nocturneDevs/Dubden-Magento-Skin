@@ -44,14 +44,19 @@ body.page-empty {
       }
     }
     #choose-store {
-      text-align: center;
+      .clearfix;
+      .make-xs-column(12);
+      .make-sm-column(10);
+      .make-sm-column-offset(1);
+      .make-md-column(8);
+      .make-md-column-offset(2);
+      padding-bottom: 4rem;
+      padding-top: 2rem;
       a {
-        .make-xs-column(4);
         .btn;
         .btn-success;
-        float: none;
-        display: block;
-        margin: 2rem auto;
+        .make-xs-column(3);
+        .make-xs-column-offset(0.75);
         background-color: @gray;
         border-color: @gray-dark;
         &:hover {
@@ -67,10 +72,10 @@ body.page-empty {
       .make-sm-column(4);
     }
     #store-location-info {
-      .make-sm-column-offset(1);
+      .make-sm-column-offset(1.5);
     }
     #cash-on-delivery-info {
-      .make-sm-column-offset(2);
+      .make-sm-column-offset(1);
     }
   }
 }
